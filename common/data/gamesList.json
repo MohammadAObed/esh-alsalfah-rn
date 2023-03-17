@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "حيوانات",
+    "imgUrl": "assets/svg/dog-footprint.svg"
+  },
+  {
+    "id": 2,
+    "name": "ملابس",
+    "imgUrl": "assets/svg/coat.svg"
+  },
+  {
+    "id": 3,
+    "name": "فواكه وخضار",
+    "imgUrl": "assets/images/viggies.jpg"
+  },
+  {
+    "id": 4,
+    "name": "كورة",
+    "imgUrl": "assets/svg/football-field-tent.svg"
+  }
+]

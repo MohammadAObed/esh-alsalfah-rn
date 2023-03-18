@@ -57,7 +57,7 @@ const ArabicTranslator = {
   Next: "التالي",
   AddPlayer: "ضيف لاعب",
   Add: "ضيف",
-  GiveThePhoneTo: "اعطو الجوال ",
+  GiveThePhoneTo: "اعطو الجوال ل",
   PressNextToKonwIfYou:
     "اضغط التالي حتى تعرف هل انت برا السالفة او داخلها ولا تخلي أحد غيرك يشوف الشاشة",
   YouAreTheImposter:

@@ -20,12 +20,12 @@ export default function App() {
         <Stack.Screen
           name="GamesListScreen"
           component={GamesListScreen}
-          options={{ animation: "slide_from_left", headerShown: false }}
+          options={{ animation: "slide_from_right", headerShown: false }}
         />
         <Stack.Screen
           name="GamePlayScreen"
           component={GamePlayScreen}
-          options={{ animation: "slide_from_left", headerShown: false }}
+          options={{ animation: "slide_from_right", headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>

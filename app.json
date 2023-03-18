@@ -4,22 +4,20 @@
     "slug": "esh-alsalfah",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/bookicon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/book2.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#333333"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/bookicon.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.maestromo.eshalsalfah"

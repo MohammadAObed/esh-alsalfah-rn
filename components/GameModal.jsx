@@ -8,7 +8,6 @@ import {
 } from "react-native";
 // import { XCircleIcon } from "react-native-heroicons/solid";
 function GameModal({ modalVisible, hideModal, children }) {
-  const test = (e) => {};
   return (
     <Modal
       visible={modalVisible}
@@ -16,16 +15,21 @@ function GameModal({ modalVisible, hideModal, children }) {
       onRequestClose={hideModal}
       transparent
     >
-      <TouchableWithoutFeedback onPress={test}>
-        <View className="flex-1 items-center justify-center bg-[#33333388] px-16">
-          <View className="relative w-full h-32 px-4 bg-white justify-center items-center">
-            <TouchableOpacity
-              className="absolute top-2 right-2"
-              onPress={hideModal}
-            >
-              {/* <XCircleIcon size={25} color="#333" /> */}
-            </TouchableOpacity>
-            {children || <Text>اللعبة ممتازة جربها او لا تجربها ل</Text>}
+      <TouchableWithoutFeedback>
+        <View className="relative flex-1 items-center justify-center bg-[#33333388]">
+          <TouchableOpacity
+            className="absolute w-full h-full bg-[#3333333]"
+            onPress={hideModal}
+          ></TouchableOpacity>
+          <View className="w-64 p-4 pt-7 bg-white items-center">
+            {children || (
+              <Text className="mt-12 text-left">
+                اللعبة ممتازة جربها او لا تجربها ل
+              </Text>
+            )}
+            <Text className="opacity-40 mt-10 text-sm">
+              بواسطة ابو عبيد &#169;
+            </Text>
           </View>
         </View>
       </TouchableWithoutFeedback>

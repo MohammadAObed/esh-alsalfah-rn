@@ -21,12 +21,6 @@ const HomeScreen = () => {
       <HomeImage />
       <Play showModal={showModal} />
       <GameModal hideModal={hideModal} modalVisible={modalVisible}>
-        <TouchableOpacity
-          className="absolute top-2 right-2"
-          onPress={hideModal}
-        >
-          <XCircleIcon size={20} color="#333" />
-        </TouchableOpacity>
         <Text>اللعبة ممتازة جربها او لا تجربها ل</Text>
       </GameModal>
     </SafeAreaView>
@@ -56,7 +50,7 @@ const HomeImage = () => {
   return (
     <View className="flex-1 justify-center">
       <Image
-        source={require("../assets/book2.png")}
+        source={require("../assets/bookicon.png")}
         className="w-52 h-52 -mt-10"
       />
     </View>

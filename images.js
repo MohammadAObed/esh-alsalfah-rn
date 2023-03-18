@@ -4,7 +4,7 @@ const images = {
     uri: require("./assets/images/dog-footprint.png"),
   },
   2: {
-    uri: require("./assets/images/backpack.png"),
+    uri: require("./assets/images/glasses.png"),
   },
   3: {
     uri: require("./assets/images/viggies.jpg"),

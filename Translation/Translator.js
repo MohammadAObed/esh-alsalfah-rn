@@ -13,12 +13,20 @@ const EnglishTranslator = {
   Next: "Next",
   AddPlayer: "Add Player",
   Add: "Add",
+<<<<<<< HEAD
   GiveThePhoneTo: "Give The Phone To ",
+=======
+  GiveThePhoneTo: "Give The Phone To",
+>>>>>>> 136e2646c31140821b559ae68b06b166711a3952
   PressNextToKonwIfYou:
     "Press next to know if you are the imposter or not, don't let anyone look at the screen",
   YouAreTheImposter:
     "You are the imposter, try to know whats the topic about from the rest or convince them to vote on an innocent person",
+<<<<<<< HEAD
   YouAreNormal: "You are a normal player, the topic of the game is ",
+=======
+  YouAreNormal: "You are a normal player, the topic of the game is",
+>>>>>>> 136e2646c31140821b559ae68b06b166711a3952
   YourNormalGoalIs: "Your goal is to figure out who's the imposter",
   QuestionsTime: "Questions Time",
   EveryPlayerWillAskAnother:
@@ -57,13 +65,21 @@ const ArabicTranslator = {
   Next: "التالي",
   AddPlayer: "ضيف لاعب",
   Add: "ضيف",
+<<<<<<< HEAD
   GiveThePhoneTo: "اعطو الجوال ",
+=======
+  GiveThePhoneTo: "اعطو الجوال لادم",
+>>>>>>> 136e2646c31140821b559ae68b06b166711a3952
   PressNextToKonwIfYou:
     "اضغط التالي حتى تعرف هل انت برا السالفة او داخلها ولا تخلي أحد غيرك يشوف الشاشة",
   YouAreTheImposter:
     " انت اللي برا السالفة! حاول تعرف وش السالفة بالضبط من كلام البقية أو اقنعهم يصوتون على الشخص الخطأ",
   YouAreNormal: " انت داخل في السالفة واللي هي",
+<<<<<<< HEAD
   YourNormalGoalIs: " هدفك في اللعبة معرفة مين منكم اللي برا السالفة",
+=======
+  YourNormalGoalIs: "هدفك في اللعبة معرفة مين منكم اللي برا السالفة",
+>>>>>>> 136e2646c31140821b559ae68b06b166711a3952
   EveryPlayerWillAskAnother:
     "كل شخص راح يسأل شخص تاني سؤال متعلق بالسالفة، اضغطو التالي حتى تعرفون مين رح يسأل مين",
   QuestionAboutTheTopic:

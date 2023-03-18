@@ -12,6 +12,12 @@ const images = {
   4: {
     uri: require("./assets/images/football.jpg"),
   },
+  5: {
+    uri: require("./assets/images/popcorn.png"),
+  },
+  6: {
+    uri: require("./assets/images/game-controller.png"),
+  },
 };
 
 export { images };

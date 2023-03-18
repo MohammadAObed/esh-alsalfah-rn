@@ -23,8 +23,8 @@ import Navbar from "./Navbar";
 const GamePlay = () => {
   const { status } = useGameContext();
   return (
-    <SafeAreaView className="flex-1 pt-10 bg-[#333]">
-      <Navbar />
+    <SafeAreaView className="flex-1 bg-[#333]">
+      {/* <Navbar /> */}
       {status === gameStatusEnum.CreatePlayers && <PlayersLobby />}
       {status === gameStatusEnum.RevealRoles && <PlayersRoles />}
       {status === gameStatusEnum.Questions && <PlayersQuestions />}

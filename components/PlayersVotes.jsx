@@ -66,7 +66,7 @@ const PlayersVotes = () => {
         <Text className="text-[#aba969]">{currentVoter.voter.name} </Text>
         اختار الشخص اللي تظن انه برا السالفة
       </Text>
-      <ScrollView className="mt-5 space-y-5 max-h-80">
+      <ScrollView className="mt-5 space-y-5 max-h-96">
         {players
           .filter((p) => p.id !== currentVoter.voter.id)
           .map((p) => {

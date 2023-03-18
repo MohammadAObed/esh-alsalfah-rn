@@ -28,7 +28,7 @@ const PlayersAdditionalQuestions = () => {
           اختار شخص تبغى تسأله أو اضغط زر صوّت اذا كنتم جاهزين للتصويت على اللي
           برا السالفة
         </Text>
-        <ScrollView className="mt-5 space-y-5 max-h-72">
+        <ScrollView className="mt-5 space-y-5 max-h-80">
           {players
             .filter((p) => p.id !== question.asker.id)
             .map((p) => {

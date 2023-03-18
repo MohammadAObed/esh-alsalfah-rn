@@ -16,8 +16,8 @@ import Navbar from "../components/Navbar";
 const HomeScreen = () => {
   const { modalVisible, showModal, hideModal } = useModal();
   return (
-    <SafeAreaView className="flex-1 pt-10 bg-[#333] items-center">
-      <Navbar />
+    <SafeAreaView className="flex-1 bg-[#333] items-center">
+      {/* <Navbar /> */}
       <HomeImage />
       <Play showModal={showModal} />
       <GameModal hideModal={hideModal} modalVisible={modalVisible}>

@@ -1,22 +1,26 @@
 [
   {
     "id": 1,
-    "name": "حيوانات",
-    "imgUrl": "assets/svg/dog-footprint.svg"
+    "name": "حيوانات"
   },
   {
     "id": 2,
-    "name": "ملابس",
-    "imgUrl": "assets/svg/coat.svg"
+    "name": "ملابس"
   },
   {
     "id": 3,
-    "name": "فواكه وخضار",
-    "imgUrl": "assets/images/viggies.jpg"
+    "name": "فواكه وخضار"
   },
   {
     "id": 4,
-    "name": "كورة",
-    "imgUrl": "assets/svg/football-field-tent.svg"
+    "name": "كورة"
+  },
+  {
+    "id": 5,
+    "name": "أفلام مسلسلات"
+  },
+  {
+    "id": 6,
+    "name": "العاب"
   }
 ]

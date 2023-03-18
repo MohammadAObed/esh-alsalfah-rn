@@ -12,8 +12,11 @@ const Navbar = () => {
   const { showModal, modalVisible, hideModal } = useModal();
   const navigation = useNavigation();
   return (
-    <View className="w-full flex-row px-4 gap-x-2">
-      <TouchableOpacity onPress={() => navigation.navigate("GamesListScreen")}>
+    <View className="w-full flex-row px-4 pt-10 pb-5 bg-[#333]">
+      <TouchableOpacity
+        onPress={() => navigation.navigate("GamesListScreen")}
+        className="mr-2"
+      >
         <HomeIcon size={25} color="#fff" />
       </TouchableOpacity>
       <TouchableOpacity onPress={showModal}>

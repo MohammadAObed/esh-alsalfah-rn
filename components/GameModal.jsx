@@ -21,7 +21,7 @@ function GameModal({ modalVisible, hideModal, children }) {
             className="absolute w-full h-full bg-[#3333333]"
             onPress={hideModal}
           ></TouchableOpacity>
-          <View className="w-64 p-4 pt-7 bg-white items-center">
+          <View className="w-64 p-4 pt-8 bg-white items-center">
             {children || (
               <Text className="mt-12 text-left">
                 اللعبة ممتازة جربها او لا تجربها ل

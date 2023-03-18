@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { ScrollView, Text, TouchableOpacity, View } from "react-native";
+import { useAppContext } from "../common/AppContext";
 import { useGameContext } from "../common/GamePlayContext";
 import { gameStatusEnum } from "../common/gamePlayEnums";
+import { Translator } from "../Translation/Translator";
 
 function initialiseVoter(player) {
   return {
@@ -20,6 +22,8 @@ const PlayersVotes = () => {
   const { players, setPlayers, setStatus, imposter } = useGameContext();
   const [votes, setVotes] = useState([]);
   const [currentVoter, setCurrentVoter] = useState(initialiseVoter(players[0]));
+  const { language } = useAppContext();
+
   const newVote = (votee) => {
     setVotes((prev) => {
       return [...prev, { voterId: currentVoter.voter.id, voteeId: votee.id }];
@@ -64,7 +68,7 @@ const PlayersVotes = () => {
     <View className="flex-1 p-10 items-center justify-center">
       <Text className="text-white text-2xl -mt-20 text-center">
         <Text className="text-[#aba969]">{currentVoter.voter.name} </Text>
-        اختار الشخص اللي تظن انه برا السالفة
+        {Translator[language].ChooseThePlayerThatYouThink}
       </Text>
       <ScrollView className="mt-5 space-y-5 max-h-96">
         {players

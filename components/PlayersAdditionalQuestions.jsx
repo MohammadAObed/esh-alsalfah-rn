@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { ScrollView, Text, TouchableOpacity, View } from "react-native";
+import { useAppContext } from "../common/AppContext";
 import { useGameContext } from "../common/GamePlayContext";
 import { gameStatusEnum } from "../common/gamePlayEnums";
+import { Translator } from "../Translation/Translator";
 
 function initialiseQuestion(players) {
   return {
@@ -14,6 +16,8 @@ const initialQuestion = {};
 const PlayersAdditionalQuestions = () => {
   const { players, setStatus } = useGameContext();
   const [question, setQuestion] = useState(initialiseQuestion(players));
+  const { language } = useAppContext();
+
   const newQuestion = (playerId) => {
     let asker = players.find((p) => p.id === playerId);
     setQuestion((prevState) => {
@@ -25,8 +29,7 @@ const PlayersAdditionalQuestions = () => {
       <View className="flex-1 items-center">
         <Text className="text-white text-2xl text-center">
           <Text className="text-[#aba969]">{question.asker.name} </Text>
-          اختار شخص تبغى تسأله أو اضغط زر صوّت اذا كنتم جاهزين للتصويت على اللي
-          برا السالفة
+          {Translator[language].ChooseAPlayerToAsk}
         </Text>
         <ScrollView className="mt-5 space-y-5 max-h-80">
           {players
@@ -53,7 +56,7 @@ const PlayersAdditionalQuestions = () => {
         }}
         className="px-10 py-2.5 bg-[#aba969] rounded-sm mt-6"
       >
-        <Text className="text-white text-3xl">صوّت</Text>
+        <Text className="text-white text-3xl">{Translator[language].Vote}</Text>
       </TouchableOpacity>
     </View>
   );

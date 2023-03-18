@@ -4,11 +4,15 @@ import { getRandomItemFromArray } from "../common/utils";
 import { useGameContext } from "../common/GamePlayContext";
 import { Image, Text, TouchableOpacity, View } from "react-native";
 import { gameStatusEnum } from "../common/gamePlayEnums";
+import { useAppContext } from "../common/AppContext";
+import { Translator } from "../Translation/Translator";
 
 const PlayersImposter = () => {
   const { players, imposter, setStatus } = useGameContext();
   const [playerName, setPlayerName] = useState("");
   const [stopAnim, setStopAnim] = useState(false);
+  const { language } = useAppContext();
+
   useEffect(() => {
     const interval = setInterval(() => {
       const player = getRandomItemFromArray(players);
@@ -33,7 +37,7 @@ const PlayersImposter = () => {
     <View className="flex-1 p-10 items-center justify-between">
       <View className="fle1 mt-6">
         <Text className="text-white text-3xl mb-6">
-          الشخص اللي برا السالفة هو
+          {Translator[language].TheImposterIs}
         </Text>
         <View className="relative items-center justify-center">
           <Image
@@ -51,7 +55,9 @@ const PlayersImposter = () => {
           }}
           className="px-10 py-2.5 bg-[#aba969] rounded-sm mt-6"
         >
-          <Text className="text-white text-3xl"> التالي</Text>
+          <Text className="text-white text-3xl">
+            {Translator[language].Next}
+          </Text>
         </TouchableOpacity>
       )}
     </View>

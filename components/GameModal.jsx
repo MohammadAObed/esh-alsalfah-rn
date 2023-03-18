@@ -6,8 +6,12 @@ import {
   TouchableWithoutFeedback,
   View,
 } from "react-native";
+import { useAppContext } from "../common/AppContext";
+import { Translator } from "../Translation/Translator";
 // import { XCircleIcon } from "react-native-heroicons/solid";
 function GameModal({ modalVisible, hideModal, children }) {
+  const { language } = useAppContext();
+
   return (
     <Modal
       visible={modalVisible}
@@ -23,12 +27,12 @@ function GameModal({ modalVisible, hideModal, children }) {
           ></TouchableOpacity>
           <View className="w-64 p-4 pt-8 bg-white items-center">
             {children || (
-              <Text className="mt-12 text-left">
-                اللعبة ممتازة جربها او لا تجربها ل
+              <Text className="mt-12 text-center">
+                {Translator[language].InfoMsg}
               </Text>
             )}
             <Text className="opacity-40 mt-10 text-sm">
-              بواسطة ابو عبيد &#169;
+              {Translator[language].ByMo} &#169;
             </Text>
           </View>
         </View>

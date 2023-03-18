@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { ScrollView, Text, TouchableOpacity, View } from "react-native";
+import { useAppContext } from "../common/AppContext";
 import GamesJSONDetails from "../common/data/gamesListDetails.json";
 import { useGameContext } from "../common/GamePlayContext";
 import { gameStatusEnum } from "../common/gamePlayEnums";
 import { getRandomAnswers } from "../common/utils";
+import { Translator } from "../Translation/Translator";
 
 const numberOfRandomAnswer = 7;
 
@@ -18,6 +20,8 @@ const PlayersImposterAnswer = () => {
       gameAnswer
     )
   );
+  const { language } = useAppContext();
+
   const checkAnswer = (imposterAnswerParam) => {
     const isCorrectAnswer =
       imposterAnswerParam.id == gameAnswer.id ? true : false;
@@ -41,7 +45,8 @@ const PlayersImposterAnswer = () => {
   return (
     <View className="flex-1 p-10 items-center">
       <Text className="text-white text-3xl">
-        <Text className="text-[#aba969]">{imposter.name}</Text> ايش هي السالفة؟
+        <Text className="text-[#aba969]">{imposter.name}</Text>
+        {Translator[language].WhatsTheTopic}
       </Text>
       <ScrollView className="space-y-2 mt-3 max-h-full">
         {randomAnswers.map((ra) => {

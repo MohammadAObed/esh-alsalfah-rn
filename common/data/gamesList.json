@@ -1,26 +1,26 @@
 [
   {
     "id": 1,
-    "name": "حيوانات"
+    "name": "Animals"
   },
   {
     "id": 2,
-    "name": "ملابس"
+    "name": "Cloths"
   },
   {
     "id": 3,
-    "name": "فواكه وخضار"
+    "name": "Viggies"
   },
   {
     "id": 4,
-    "name": "كورة"
+    "name": "Football"
   },
   {
     "id": 5,
-    "name": "أفلام مسلسلات"
+    "name": "FilmsAndSeries"
   },
   {
     "id": 6,
-    "name": "العاب"
+    "name": "Games"
   }
 ]

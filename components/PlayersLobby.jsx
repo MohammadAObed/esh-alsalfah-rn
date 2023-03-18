@@ -11,10 +11,14 @@ import usePlayerStuff from "../common/hooks/usePlayerStuff";
 import { gameStatusEnum } from "../common/gamePlayEnums";
 import GameModal from "./GameModal";
 import { MinusIcon, PlusIcon, XCircleIcon } from "react-native-heroicons/solid";
+import { useAppContext } from "../common/AppContext";
+import { Translator } from "../Translation/Translator";
 
 //!!!! Aleeeert, if textinput parameter (e) sometimes its a string, sometimes its an object and to get the string (sender.nativeEvent.text)
 
 const PlayersLobby = () => {
+  const { language } = useAppContext();
+
   //setPlayers will invoke the useEffect with useLocalStorage
   const { players, setPlayers, showModal, hideModal, modalVisible, setStatus } =
     useGameContext();
@@ -33,7 +37,6 @@ const PlayersLobby = () => {
   };
   const nextOnPress = (e) => {
     if (players.length < 3) {
-      alert("ضف ثلاثة لاعبين على الأقل");
       return;
     }
     setStatus(gameStatusEnum.RevealRoles);
@@ -50,7 +53,9 @@ const PlayersLobby = () => {
   // };
   return (
     <View className="flex-1 p-10 justify-between">
-      <Text className="text-white text-3xl">اختار اللاعبين</Text>
+      <Text className="text-white text-3xl">
+        {Translator[language].ChoosePlayers}
+      </Text>
       <ScrollView className="flex-1 max-h-80">
         {isPlayersEmpty ? (
           <Text className="text-3xl text-red-400">لا يوجد لاعبين</Text>
@@ -61,6 +66,7 @@ const PlayersLobby = () => {
                 key={player.id}
                 {...player}
                 removePlayer={removePlayer}
+                language={language}
               ></Player>
             );
           })
@@ -83,7 +89,9 @@ const PlayersLobby = () => {
           disabled={players.length < 3 ? true : false}
           style={{ opacity: players.length < 3 ? 0.5 : 1 }}
         >
-          <Text className="text-white text-3xl">التالي</Text>
+          <Text className="text-white text-3xl">
+            {Translator[language].Next}
+          </Text>
         </TouchableOpacity>
       </View>
       <GameModal hideModal={hideModal} modalVisible={modalVisible}>
@@ -117,9 +125,13 @@ const PlayersLobby = () => {
 
 export default PlayersLobby;
 
-const Player = ({ name, points, id, removePlayer }) => {
+const Player = ({ name, points, id, removePlayer, language }) => {
   return (
-    <View className="justify-between flex-row items-center bg-[#30373D] border border-[#2B3137] py-2 px-3">
+    <View
+      className={`${
+        language == "AR" ? "flex-row" : " flex-row-reverse"
+      } justify-between items-center bg-[#30373D] border border-[#2B3137] py-2 px-3`}
+    >
       <TouchableOpacity
         className="px-4 py-4 bg-[#aba969] rounded-full w-14"
         onPress={() => {

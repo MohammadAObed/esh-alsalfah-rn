@@ -2,8 +2,12 @@ import { View, Text, TouchableOpacity, Image } from "react-native";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
 import { images } from "../images";
+import { useAppContext } from "../common/AppContext";
+import { Translator } from "../Translation/Translator";
 const Game = ({ name, imgUrl, id }) => {
   // const newImgUrl = "../" + imgUrl;
+  const { language } = useAppContext();
+
   const navigation = useNavigation();
   // box-shadow: 2px 5px 1px rgba(0, 0, 0, 0.1);
   // background-color: rgb(125, 129, 133);
@@ -16,7 +20,7 @@ const Game = ({ name, imgUrl, id }) => {
       >
         <View className="w-full" /* id={`game-${id}`} */>
           <Text className="absolute text-4xl text-[#333] z-10 top-3 self-center text-center">
-            {name}
+            {Translator[language][name]}
           </Text>
           <View className="w-full h-full items-center">
             <Image source={images[id]?.uri} className="h-full w-full" />

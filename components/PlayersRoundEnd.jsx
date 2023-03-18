@@ -1,18 +1,25 @@
 import React from "react";
 import { Text, TouchableOpacity, View } from "react-native";
+import { useAppContext } from "../common/AppContext";
 import { useGameContext } from "../common/GamePlayContext";
 import { gameStatusEnum } from "../common/gamePlayEnums";
+import { Translator } from "../Translation/Translator";
 
 const PlayersRoundEnd = () => {
   const { setStatus } = useGameContext();
+  const { language } = useAppContext();
+
   return (
     <View className="flex-1 p-10 items-center justify-between">
-      <Text className="text-[#aba969] text-3xl">نهاية الجولة</Text>
-      <Text className="text-white text-2xl text-center">
-        تقدرون تكملون لعب أو تغيرون لاعب أو ترجعون لشاشة اختيار الأسئلة
+      <Text className="text-[#aba969] text-3xl">
+        {" "}
+        {Translator[language].RoundEnd}
       </Text>
       <Text className="text-white text-2xl text-center">
-        زمبحكولك! كمّل لعب، حتى لو قالولك صعب
+        {Translator[language].YouCanContinue}
+      </Text>
+      <Text className="text-white text-2xl text-center">
+        {Translator[language].EndMsg}
       </Text>
       <View className="items-center">
         <TouchableOpacity
@@ -22,7 +29,10 @@ const PlayersRoundEnd = () => {
           }}
           className="px-10 py-2.5 bg-[#aba969] rounded-sm mt-6 w-60"
         >
-          <Text className="text-white text-3xl text-center">كمّل لعب</Text>
+          <Text className="text-white text-3xl text-center">
+            {" "}
+            {Translator["EN"].ContinueTheGame}
+          </Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={(e) => {
@@ -32,7 +42,7 @@ const PlayersRoundEnd = () => {
           className="px-10 py-2.5 bg-red-800 rounded-sm mt-3 w-60"
         >
           <Text className="text-white text-3xl text-center">
-            تغيير اللاعبين
+            {Translator[language].ChangePlayers}
           </Text>
         </TouchableOpacity>
       </View>

@@ -1,12 +1,18 @@
 import React from "react";
 import { Text, TouchableOpacity, View } from "react-native";
+import { useAppContext } from "../common/AppContext";
 import { useGameContext } from "../common/GamePlayContext";
 import { gameStatusEnum } from "../common/gamePlayEnums";
+import { Translator } from "../Translation/Translator";
 const PlayersPoints = () => {
   const { players, setStatus } = useGameContext();
+  const { language } = useAppContext();
+
   return (
     <View className="flex-1 p-10 items-center justify-between">
-      <Text className="text-white text-6xl">النتائج</Text>
+      <Text className="text-white text-6xl">
+        {Translator[language].Results}
+      </Text>
       <View className="w-full">
         {players.map((player) => {
           return <PlayerPoint key={player.id} {...player} />;
@@ -19,7 +25,7 @@ const PlayersPoints = () => {
         }}
         className="px-10 py-2.5 bg-[#aba969] rounded-sm mt-6"
       >
-        <Text className="text-white text-3xl">التالي</Text>
+        <Text className="text-white text-3xl">{Translator[language].Next}</Text>
       </TouchableOpacity>
     </View>
   );

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Text, TouchableOpacity, View } from "react-native";
+import { useAppContext } from "../common/AppContext";
 import { useGameContext } from "../common/GamePlayContext";
 import useCurrentPlayer from "../common/hooks/useCurrentPlayer";
+import { Translator } from "../Translation/Translator";
 
 const PlayersRoles = () => {
   const {
@@ -14,6 +16,7 @@ const PlayersRoles = () => {
   const [players, setPlayers] = useState(pp);
   const [currentPlayer, setCurrentPlayer, isRoleShown, setIsRoleShown] =
     useCurrentPlayer(players, setPlayers, setStatus);
+  const { language } = useAppContext();
   const updateCurrentPlayer = () => {
     const playersNotPlayed = players.map((player) => {
       if (player.id === currentPlayer.id) {
@@ -39,26 +42,22 @@ const PlayersRoles = () => {
         {currentPlayer.name}
       </Text>
       <Text className="text-white text-2xl text-center mt-3">
-        اعطو الجوال ل<Text>{currentPlayer.name}</Text>
+        {Translator[language].GiveThePhoneTo}
+        <Text>{currentPlayer.name}</Text>
       </Text>
       {!isRoleShown ? (
         <Text className="text-white text-center text-lg mt-3">
-          اضغط التالي حتى تعرف هل انت برا السالفة او داخلها ولا تخلي أحد غيرك
-          يشوف الشاشة
+          {Translator[language].PressNextToKonwIfYou}
         </Text>
       ) : currentPlayer.id === imposter.id ? (
         <Text className="text-white text-center text-lg mt-3">
-          انت اللي برا السالفة! حاول تعرف وش السالفة بالضبط من كلام البقية أو
-          اقنعهم يصوتون على الشخص الخطأ
+          {Translator[language].YouAreTheImposter}
         </Text>
       ) : (
         <Text className="text-white text-center text-lg mt-3">
-          انت داخل في السالفة واللي هي
-          <Text className="text-[#aba969] text-center">
-            {" "}
-            {gameAnswer.name}{" "}
-          </Text>
-          هدفك في اللعبة معرفة مين منكم اللي برا السالفة
+          {Translator[language].YouAreNormal}
+          <Text className="text-[#aba969] text-center"> {gameAnswer.name}</Text>
+          {Translator[language].YourNormalGoalIs}
         </Text>
       )}
 
@@ -68,7 +67,7 @@ const PlayersRoles = () => {
         }}
         className="px-10 py-2.5 bg-[#aba969] rounded-sm mt-6"
       >
-        <Text className="text-white text-3xl">التالي</Text>
+        <Text className="text-white text-3xl">{Translator[language].Next}</Text>
       </TouchableOpacity>
     </View>
   );

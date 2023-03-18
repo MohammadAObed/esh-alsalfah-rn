@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { Text, TouchableOpacity, View } from "react-native";
+import { useAppContext } from "../common/AppContext";
 import { useGameContext } from "../common/GamePlayContext";
 import { gameStatusEnum } from "../common/gamePlayEnums";
+import { Translator } from "../Translation/Translator";
 
 const initialQuestion = {
   asker: {},
@@ -18,6 +20,7 @@ const PlayersQuestions = () => {
   const [question, setQuestion] = useState(initialQuestion);
   const [isNewQuestion, setIsNewQuestion] = useState(false);
   const [askerIndex, setAskerIndex] = useState(noAskerIndex);
+  const { language } = useAppContext();
   let randomPositionedPlayers = useMemo(
     () => players.sort(() => Math.random() - 0.5),
     [players]
@@ -70,20 +73,17 @@ const PlayersQuestions = () => {
   return (
     <View className="flex-1 p-10 items-center justify-center">
       <Text className="text-[#aba969] text-4xl text-center -mt-20">
-        وقت الاسئلة
+        {Translator[language].QuestionsTime}
       </Text>
       <Text className="text-center text-lg text-white">
         {question.began == false ? (
-          <Text>
-            كل شخص راح يسأل شخص تاني سؤال متعلق بالسالفة، اضغطو التالي حتى
-            تعرفون مين رح يسأل مين
-          </Text>
+          <Text>{Translator[language].EveryPlayerWillAskAnother}</Text>
         ) : (
           <Text>
-            <Text className="text-[#aba969]">{question.asker.name} </Text> اسأل
+            <Text className="text-[#aba969]">{question.asker.name} </Text>{" "}
+            {Translator[language].Ask}
             <Text className="text-[#aba969]"> {question.askee.name} </Text>
-            سؤال متعلق بالسالفة! اختار سؤالك بعناية حتى اللي برا السالفة ما بعرف
-            عن ايش تتكلمون
+            {Translator[language].QuestionAboutTheTopic}
           </Text>
         )}
       </Text>
@@ -94,7 +94,7 @@ const PlayersQuestions = () => {
         }}
         className="px-10 py-2.5 bg-[#aba969] rounded-sm mt-6"
       >
-        <Text className="text-white text-3xl">التالي</Text>
+        <Text className="text-white text-3xl">{Translator[language].Next}</Text>
       </TouchableOpacity>
     </View>
   );

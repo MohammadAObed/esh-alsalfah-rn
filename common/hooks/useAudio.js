@@ -6,7 +6,7 @@ const useAudio = (soundEnum) => {
   const [sound, setSound] = useState();
 
   async function playSound() {
-    console.log("replaying Sound");
+    // console.log("replaying Sound");
     // await sound.playAsync();
     await sound.replayAsync();
   }
@@ -16,13 +16,13 @@ const useAudio = (soundEnum) => {
       const { sound } = await Audio.Sound.createAsync(
         require("../../assets/audio/btn-click.wav")
       );
-      console.log("EnumBtn", soundsEnum.Btn);
+      // console.log("EnumBtn", soundsEnum.Btn);
       setSound(sound);
     } else if (soundEnum == soundsEnum.GameOver) {
       const { sound } = await Audio.Sound.createAsync(
         require("../../assets/audio/game-over.wav")
       );
-      console.log("EnumBtn", soundsEnum.GameOver);
+      // console.log("EnumBtn", soundsEnum.GameOver);
       setSound(sound);
       // await sound.playFromPositionAsync()
       await sound.replayAsync();

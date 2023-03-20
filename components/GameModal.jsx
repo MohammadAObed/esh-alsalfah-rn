@@ -16,7 +16,7 @@ function GameModal({ modalVisible, hideModal, children }) {
   return (
     <Modal
       visible={modalVisible}
-      animationType="fade"
+      animationType="none"
       onRequestClose={hideModal}
       transparent
     >
@@ -38,9 +38,9 @@ function GameModal({ modalVisible, hideModal, children }) {
                 {Translator[language].InfoMsg}
               </Text>
             )}
-            <Text className="opacity-40 mt-10 text-sm">
+            {/* <Text className="opacity-40 mt-10 text-sm">
               {Translator[language].ByMo} &#169;
-            </Text>
+            </Text> */}
           </View>
         </View>
       </TouchableWithoutFeedback>

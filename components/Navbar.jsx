@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, ScrollView } from "react-native";
 import React, { useEffect, useState } from "react";
 import {
   HomeIcon,
@@ -53,7 +53,7 @@ const Navbar = () => {
       </TouchableOpacity>
       <GameModal hideModal={hideModal} modalVisible={modalVisible}>
         {whichModalContent == modalContent.info ? (
-          <Text className="text-center">{Translator[language].InfoMsg}</Text>
+          <Credits Translator={Translator} language={language} />
         ) : (
           <Languages hideModal={hideModal} setLanguage={setLanguage} />
         )}
@@ -78,6 +78,38 @@ const Languages = ({ hideModal, setLanguage }) => {
           </Text>
         </TouchableOpacity>
       ))}
+    </View>
+  );
+};
+
+const Credits = ({ Translator, language }) => {
+  return (
+    <View>
+      <Text className="mt-2 text-center">{Translator[language].InfoMsg}</Text>
+      <Text className="mt-10 text-sm text-center">
+        {Translator[language].Credits}
+      </Text>
+      <View>
+        <ScrollView className=" max-h-16 mt-2">
+          <View className="w-full items-center p-2 pt-0">
+            <Text className="text-center opacity-40">
+              {Translator[language].GameInspiredBy} "برا السالفة"
+            </Text>
+            <Text className="text-center opacity-40">
+              Images From Vecteezy:
+            </Text>
+            <Text className="text-center opacity-40">abderraouf omara</Text>
+            <Text className="text-center opacity-40">jellyfishwater</Text>
+            <Text className="text-center opacity-40">muhamadbintangkresna</Text>
+            <Text className="text-center opacity-40">nightwolfdezines</Text>
+            <Text className="text-center opacity-40">template.net</Text>
+          </View>
+        </ScrollView>
+      </View>
+
+      <Text className="opacity-40 mt-10 text-sm text-center">
+        {Translator[language].ByMo} &#169;
+      </Text>
     </View>
   );
 };

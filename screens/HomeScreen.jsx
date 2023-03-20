@@ -17,12 +17,12 @@ import { Translator } from "../Translation/Translator";
 import { useAppContext } from "../common/AppContext";
 const HomeScreen = () => {
   const { modalVisible, showModal, hideModal } = useModal();
-  const { language } = useAppContext();
+  const { language, playSound } = useAppContext();
   return (
     <SafeAreaView className="flex-1 bg-[#333] items-center">
       {/* <Navbar /> */}
       <HomeImage />
-      <Play showModal={showModal} language={language} />
+      <Play showModal={showModal} language={language} playSound={playSound} />
       <GameModal hideModal={hideModal} modalVisible={modalVisible}>
         <Text>اللعبة ممتازة جربها او لا تجربها ل</Text>
       </GameModal>
@@ -32,13 +32,16 @@ const HomeScreen = () => {
 
 export default HomeScreen;
 
-const Play = ({ showModal, language }) => {
+const Play = ({ showModal, language, playSound }) => {
   const navigation = useNavigation();
   return (
     <View className="w-full mb-10">
       <TouchableOpacity
         className="bg-[#aba969] mx-5 h-14 justify-center items-center rounded-md"
-        onPress={() => navigation.navigate("GamesListScreen")}
+        onPress={() => {
+          playSound();
+          navigation.navigate("GamesListScreen");
+        }}
       >
         <Text className="text-4xl font-bold text-white">
           {Translator[language].Play}

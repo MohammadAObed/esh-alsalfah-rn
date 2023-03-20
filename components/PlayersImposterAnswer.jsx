@@ -20,7 +20,7 @@ const PlayersImposterAnswer = () => {
       gameAnswer
     )
   );
-  const { language } = useAppContext();
+  const { language, playSound } = useAppContext();
 
   const checkAnswer = (imposterAnswerParam) => {
     const isCorrectAnswer =
@@ -61,7 +61,10 @@ const PlayersImposterAnswer = () => {
               }`}
               // className="px-10 py-2.5 bg-red-800 rounded-sm"
               key={ra.id}
-              onPress={() => checkAnswer(ra)}
+              onPress={() => {
+                playSound();
+                checkAnswer(ra);
+              }}
               disabled={imposterAnswer.id == 0 ? false : true}
             >
               <Text className="text-white text-3xl text-center">{ra.name}</Text>

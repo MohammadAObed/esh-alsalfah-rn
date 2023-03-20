@@ -7,13 +7,15 @@ import React, {
   useState,
 } from "react";
 import { Translator } from "../Translation/Translator";
+import { soundsEnum } from "./gamePlayEnums";
+import useAudio from "./hooks/useAudio";
 import useLocalStorage from "./hooks/useLocalStorage";
 const AppContext = createContext();
 function AppContextProvider({ children }) {
   const [language, setLanguage] = useLocalStorage("ESH_ALS_Language", "AR");
-
+  const { playSound } = useAudio(soundsEnum.Btn);
   return (
-    <AppContext.Provider value={{ language, setLanguage }}>
+    <AppContext.Provider value={{ language, setLanguage, playSound }}>
       {children}
     </AppContext.Provider>
   );

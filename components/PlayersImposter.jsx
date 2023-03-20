@@ -3,17 +3,20 @@ import React, { useState, useEffect } from "react";
 import { getRandomItemFromArray } from "../common/utils";
 import { useGameContext } from "../common/GamePlayContext";
 import { Image, Text, TouchableOpacity, View } from "react-native";
-import { gameStatusEnum } from "../common/gamePlayEnums";
+import { gameStatusEnum, soundsEnum } from "../common/gamePlayEnums";
 import { useAppContext } from "../common/AppContext";
 import { Translator } from "../Translation/Translator";
+import useAudio from "../common/hooks/useAudio";
 
 const PlayersImposter = () => {
   const { players, imposter, setStatus } = useGameContext();
   const [playerName, setPlayerName] = useState("");
   const [stopAnim, setStopAnim] = useState(false);
-  const { language } = useAppContext();
+  const { language, playSound: playBtnSound } = useAppContext();
+  const { playSound } = useAudio(soundsEnum.GameOver);
 
   useEffect(() => {
+    // playSound();
     const interval = setInterval(() => {
       const player = getRandomItemFromArray(players);
       setPlayerName(player.name);
@@ -23,7 +26,7 @@ const PlayersImposter = () => {
       clearInterval(interval);
       setStopAnim(true);
       setPlayerName(imposter.name);
-    }, 3000);
+    }, 4000);
     // const audio = new Audio(gameOverSound);
     // audio.play();
     // audio.playbackRate = 1.3;
@@ -50,6 +53,7 @@ const PlayersImposter = () => {
       {stopAnim && (
         <TouchableOpacity
           onPress={(e) => {
+            playBtnSound();
             setStatus((prev) => gameStatusEnum.ImposterAnswer);
             // playBtnClickSound();
           }}

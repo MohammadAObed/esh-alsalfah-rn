@@ -6,7 +6,7 @@ import { useAppContext } from "../common/AppContext";
 import { Translator } from "../Translation/Translator";
 const Game = ({ name, imgUrl, id }) => {
   // const newImgUrl = "../" + imgUrl;
-  const { language } = useAppContext();
+  const { language, playSound } = useAppContext();
 
   const navigation = useNavigation();
   // box-shadow: 2px 5px 1px rgba(0, 0, 0, 0.1);
@@ -16,7 +16,10 @@ const Game = ({ name, imgUrl, id }) => {
       <View className="absolute w-full h-full rotate-6 bg-[#4d4c3a] "></View>
       <View className="absolute w-screen h-1.5 -bottom-2 -right-10 bg-[#7D8085] shadow-md"></View>
       <TouchableOpacity
-        onPress={() => navigation.navigate("GamePlayScreen", { id })}
+        onPress={() => {
+          playSound();
+          navigation.navigate("GamePlayScreen", { id });
+        }}
       >
         <View className="w-full" /* id={`game-${id}`} */>
           <Text className="absolute text-4xl text-[#333] z-10 top-3 self-center text-center">

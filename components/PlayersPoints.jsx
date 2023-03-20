@@ -6,7 +6,7 @@ import { gameStatusEnum } from "../common/gamePlayEnums";
 import { Translator } from "../Translation/Translator";
 const PlayersPoints = () => {
   const { players, setStatus } = useGameContext();
-  const { language } = useAppContext();
+  const { language, playSound } = useAppContext();
 
   return (
     <View className="flex-1 p-10 items-center justify-between">
@@ -20,8 +20,8 @@ const PlayersPoints = () => {
       </View>
       <TouchableOpacity
         onPress={(e) => {
+          playSound();
           setStatus((prev) => gameStatusEnum.RoundEnd);
-          // playBtnClickSound();
         }}
         className="px-10 py-2.5 bg-[#aba969] rounded-sm mt-6"
       >

@@ -10,14 +10,14 @@ import { useGameContext } from "../common/GamePlayContext";
 import usePlayerStuff from "../common/hooks/usePlayerStuff";
 import { gameStatusEnum } from "../common/gamePlayEnums";
 import GameModal from "./GameModal";
-import { MinusIcon, PlusIcon, XCircleIcon } from "react-native-heroicons/solid";
+import { MinusIcon, PlusIcon } from "react-native-heroicons/solid";
 import { useAppContext } from "../common/AppContext";
 import { Translator } from "../Translation/Translator";
 
 //!!!! Aleeeert, if textinput parameter (e) sometimes its a string, sometimes its an object and to get the string (sender.nativeEvent.text)
 
 const PlayersLobby = () => {
-  const { language } = useAppContext();
+  const { language, playSound } = useAppContext();
 
   //setPlayers will invoke the useEffect with useLocalStorage
   const { players, setPlayers, showModal, hideModal, modalVisible, setStatus } =
@@ -67,15 +67,21 @@ const PlayersLobby = () => {
                 {...player}
                 removePlayer={removePlayer}
                 language={language}
+                playSound={playSound}
               ></Player>
             );
           })
         )}
       </ScrollView>
-      <View className="mb-5 justify-between flex-row items-center">
+      <View
+        className={`${
+          language == "AR" ? "flex-row" : " flex-row-reverse"
+        } mb-5 justify-between items-center`}
+      >
         <TouchableOpacity
           className="px-4 py-4 bg-[#aba969] rounded-full"
           onPress={(e) => {
+            playSound();
             showModal(e);
           }}
         >
@@ -84,6 +90,7 @@ const PlayersLobby = () => {
         <TouchableOpacity
           className="px-10 py-2.5 bg-[#aba969] rounded-sm"
           onPress={() => {
+            playSound();
             nextOnPress();
           }}
           disabled={players.length < 3 ? true : false}
@@ -95,22 +102,21 @@ const PlayersLobby = () => {
         </TouchableOpacity>
       </View>
       <GameModal hideModal={hideModal} modalVisible={modalVisible}>
-        <TouchableOpacity
-          className="absolute top-2 right-2"
-          onPress={hideModal}
-        >
-          <XCircleIcon size={20} color="#333" />
-        </TouchableOpacity>
         <View className="flex-row mt-3">
           <TouchableOpacity
             className="px-5 py-1 bg-[#aba969] rounded-sm"
-            onPress={handleSubmit}
+            onPress={() => {
+              playSound();
+              handleSubmit();
+            }}
           >
-            <Text className="text-white text-2xl">ضيف</Text>
+            <Text className="text-white text-2xl">
+              {Translator[language].Add}
+            </Text>
           </TouchableOpacity>
           <TextInput
             className="bg-[#333] text-white flex-1 px-2 py-2 text-right"
-            placeholder="ضيف لاعب"
+            placeholder={`${Translator[language].AddPlayer}`}
             onChange={handleTextChange}
             value={playerInput}
             // ref={inputRef}
@@ -125,7 +131,7 @@ const PlayersLobby = () => {
 
 export default PlayersLobby;
 
-const Player = ({ name, points, id, removePlayer, language }) => {
+const Player = ({ name, points, id, removePlayer, language, playSound }) => {
   return (
     <View
       className={`${
@@ -136,6 +142,7 @@ const Player = ({ name, points, id, removePlayer, language }) => {
         className="px-4 py-4 bg-[#aba969] rounded-full w-14"
         onPress={() => {
           // console.log("🚀 ~ file: PlayersLobby.jsx:130 ~ Player ~ id:", id);
+          playSound();
           removePlayer(id);
         }}
       >

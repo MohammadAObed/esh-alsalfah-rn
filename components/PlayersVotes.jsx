@@ -22,7 +22,7 @@ const PlayersVotes = () => {
   const { players, setPlayers, setStatus, imposter } = useGameContext();
   const [votes, setVotes] = useState([]);
   const [currentVoter, setCurrentVoter] = useState(initialiseVoter(players[0]));
-  const { language } = useAppContext();
+  const { language, playSound } = useAppContext();
 
   const newVote = (votee) => {
     setVotes((prev) => {
@@ -78,7 +78,10 @@ const PlayersVotes = () => {
               <TouchableOpacity
                 className="px-10 py-2.5 bg-red-800 rounded-sm"
                 key={p.id}
-                onPress={() => newVote(p)}
+                onPress={() => {
+                  playSound();
+                  newVote(p);
+                }}
               >
                 <Text className="text-white text-3xl">{p.name}</Text>
               </TouchableOpacity>

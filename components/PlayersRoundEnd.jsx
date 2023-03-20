@@ -7,7 +7,7 @@ import { Translator } from "../Translation/Translator";
 
 const PlayersRoundEnd = () => {
   const { setStatus } = useGameContext();
-  const { language } = useAppContext();
+  const { language, playSound } = useAppContext();
 
   return (
     <View className="flex-1 p-10 items-center justify-between">
@@ -24,6 +24,7 @@ const PlayersRoundEnd = () => {
       <View className="items-center">
         <TouchableOpacity
           onPress={(e) => {
+            playSound();
             setStatus((prev) => gameStatusEnum.RevealRoles);
             // playBtnClickSound();
           }}
@@ -31,11 +32,12 @@ const PlayersRoundEnd = () => {
         >
           <Text className="text-white text-3xl text-center">
             {" "}
-            {Translator["EN"].ContinueTheGame}
+            {Translator[language].ContinueTheGame}
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={(e) => {
+            playSound();
             setStatus((prev) => gameStatusEnum.CreatePlayers);
             // playBtnClickSound();
           }}

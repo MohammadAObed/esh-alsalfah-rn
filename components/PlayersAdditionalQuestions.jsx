@@ -16,7 +16,7 @@ const initialQuestion = {};
 const PlayersAdditionalQuestions = () => {
   const { players, setStatus } = useGameContext();
   const [question, setQuestion] = useState(initialiseQuestion(players));
-  const { language } = useAppContext();
+  const { language, playSound } = useAppContext();
 
   const newQuestion = (playerId) => {
     let asker = players.find((p) => p.id === playerId);
@@ -39,7 +39,10 @@ const PlayersAdditionalQuestions = () => {
                 <TouchableOpacity
                   className="bg-red-800 px-10 py-3 "
                   key={p.id}
-                  onPress={() => newQuestion(p.id)}
+                  onPress={() => {
+                    playSound();
+                    newQuestion(p.id);
+                  }}
                 >
                   <Text className="text-white text-2xl font-bold text-center">
                     {p.name}
@@ -51,7 +54,7 @@ const PlayersAdditionalQuestions = () => {
       </View>
       <TouchableOpacity
         onPress={(e) => {
-          // playBtnClickSound();
+          playSound();
           setStatus((prev) => gameStatusEnum.Voting);
         }}
         className="px-10 py-2.5 bg-[#aba969] rounded-sm mt-6"

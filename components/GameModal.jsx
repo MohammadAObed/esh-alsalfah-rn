@@ -6,6 +6,7 @@ import {
   TouchableWithoutFeedback,
   View,
 } from "react-native";
+import { XCircleIcon } from "react-native-heroicons/solid";
 import { useAppContext } from "../common/AppContext";
 import { Translator } from "../Translation/Translator";
 // import { XCircleIcon } from "react-native-heroicons/solid";
@@ -26,6 +27,12 @@ function GameModal({ modalVisible, hideModal, children }) {
             onPress={hideModal}
           ></TouchableOpacity>
           <View className="w-64 p-4 pt-8 bg-white items-center">
+            <TouchableOpacity
+              className="absolute top-2 right-2"
+              onPress={hideModal}
+            >
+              <XCircleIcon size={23} color="#333" />
+            </TouchableOpacity>
             {children || (
               <Text className="mt-12 text-center">
                 {Translator[language].InfoMsg}

@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import {
   HomeIcon,
   QuestionMarkCircleIcon,
-  XCircleIcon,
   GlobeAltIcon,
 } from "react-native-heroicons/solid";
 import useModal from "../common/hooks/useModal";
@@ -21,17 +20,21 @@ const Navbar = () => {
   const { showModal, modalVisible, hideModal } = useModal();
   const [whichModalContent, setWhichModalContent] = useState(1);
   const navigation = useNavigation();
-  const { setLanguage, language } = useAppContext();
+  const { setLanguage, language, playSound } = useAppContext();
   return (
     <View className="w-full flex-row px-4 pt-10 pb-5 bg-[#333]">
       <TouchableOpacity
-        onPress={() => navigation.navigate("GamesListScreen")}
+        onPress={() => {
+          playSound();
+          navigation.navigate("GamesListScreen");
+        }}
         className="mr-2"
       >
         <HomeIcon size={25} color="#fff" />
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => {
+          playSound();
           showModal();
           setWhichModalContent(modalContent.info);
         }}
@@ -41,6 +44,7 @@ const Navbar = () => {
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => {
+          playSound();
           showModal();
           setWhichModalContent(modalContent.translation);
         }}
@@ -48,12 +52,6 @@ const Navbar = () => {
         <GlobeAltIcon size={25} color="#fff" />
       </TouchableOpacity>
       <GameModal hideModal={hideModal} modalVisible={modalVisible}>
-        <TouchableOpacity
-          className="absolute top-2 right-2"
-          onPress={hideModal}
-        >
-          <XCircleIcon size={20} color="#333" />
-        </TouchableOpacity>
         {whichModalContent == modalContent.info ? (
           <Text className="text-center">{Translator[language].InfoMsg}</Text>
         ) : (

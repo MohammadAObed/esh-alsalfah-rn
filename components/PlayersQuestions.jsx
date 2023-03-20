@@ -20,7 +20,7 @@ const PlayersQuestions = () => {
   const [question, setQuestion] = useState(initialQuestion);
   const [isNewQuestion, setIsNewQuestion] = useState(false);
   const [askerIndex, setAskerIndex] = useState(noAskerIndex);
-  const { language } = useAppContext();
+  const { language, playSound } = useAppContext();
   let randomPositionedPlayers = useMemo(
     () => players.sort(() => Math.random() - 0.5),
     [players]
@@ -89,6 +89,7 @@ const PlayersQuestions = () => {
       </Text>
       <TouchableOpacity
         onPress={(e) => {
+          playSound();
           NewQuestion();
           // playBtnClickSound();
         }}

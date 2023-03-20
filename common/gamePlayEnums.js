@@ -9,3 +9,8 @@ export const gameStatusEnum = {
   ShowPoints: 8,
   RoundEnd: 9,
 };
+
+export const soundsEnum = {
+  Btn: 1,
+  GameOver: 2,
+};

@@ -16,7 +16,7 @@ const PlayersRoles = () => {
   const [players, setPlayers] = useState(pp);
   const [currentPlayer, setCurrentPlayer, isRoleShown, setIsRoleShown] =
     useCurrentPlayer(players, setPlayers, setStatus);
-  const { language } = useAppContext();
+  const { language, playSound } = useAppContext();
   const updateCurrentPlayer = () => {
     const playersNotPlayed = players.map((player) => {
       if (player.id === currentPlayer.id) {
@@ -63,6 +63,7 @@ const PlayersRoles = () => {
 
       <TouchableOpacity
         onPress={(e) => {
+          playSound();
           isRoleShown ? updateCurrentPlayer() : revealRole();
         }}
         className="px-10 py-2.5 bg-[#aba969] rounded-sm mt-6"

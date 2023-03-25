@@ -34,7 +34,7 @@ function GameModal({ modalVisible, hideModal, children }) {
               <XCircleIcon size={23} color="#333" />
             </TouchableOpacity>
             {children || (
-              <Text className="mt-12 text-center">
+              <Text className="mt-4 text-center">
                 {Translator[language].InfoMsg}
               </Text>
             )}

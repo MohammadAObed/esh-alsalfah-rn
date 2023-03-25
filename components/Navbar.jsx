@@ -107,9 +107,9 @@ const Credits = ({ Translator, language }) => {
         </ScrollView>
       </View>
 
-      <Text className="opacity-40 mt-10 text-sm text-center">
+      {/* <Text className="opacity-40 mt-10 text-sm text-center">
         {Translator[language].ByMo} &#169;
-      </Text>
+      </Text> */}
     </View>
   );
 };

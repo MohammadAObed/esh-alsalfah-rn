@@ -24,7 +24,10 @@ const HomeScreen = () => {
       <HomeImage />
       <Play showModal={showModal} language={language} playSound={playSound} />
       <GameModal hideModal={hideModal} modalVisible={modalVisible}>
-        <Text>اللعبة ممتازة جربها او لا تجربها ل</Text>
+        <Text className="mt-4 text-center">{Translator[language].InfoMsg}</Text>
+        <Text className="opacity-40 mt-10 text-sm">
+          {Translator[language].ByMo} &#169;
+        </Text>
       </GameModal>
     </SafeAreaView>
   );

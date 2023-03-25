@@ -1,8 +1,8 @@
 const EnglishTranslator = {
   Play: "Play",
   AboutGame: "About Game?",
-  InfoMsg: "The game is just great, mate",
-  ByMo: "By Mohammad Obed",
+  InfoMsg: "Play With Friends, Until one Friend Plays you",
+  ByMo: "By Abo Obed",
   Animals: "Animals",
   Cloths: "Cloths",
   Viggies: "Viggies",
@@ -47,8 +47,8 @@ const EnglishTranslator = {
 const ArabicTranslator = {
   Play: "العب",
   AboutGame: "حول اللعبة؟",
-  InfoMsg: "اللعبة جميلة، زي عيون حليمة",
-  ByMo: "بواسطة محمد عبيد",
+  InfoMsg: "العب مع الصحاب، لحتى صاحب يلعب فيكم",
+  ByMo: "بواسطة ابو عبيد",
   Animals: "حيوانات",
   Cloths: "ملابس",
   Viggies: "خضار وفواكه",
@@ -85,7 +85,7 @@ const ArabicTranslator = {
   EndMsg: " زمبحكولك! كمّل لعب، حتى لو قالولك صعب",
   ContinueTheGame: "كمّل لعب",
   ChangePlayers: "تغيير اللاعبين",
-  Credits: "اعتمادات",
+  Credits: "كريدتس",
   GameInspiredBy: "اللعبة مستوحاة من",
 };
 

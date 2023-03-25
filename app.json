@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Esh AlSalfah",
-    "slug": "esh-alsalfah",
+    "name": "ايش السالفة",
+    "slug": "eshalsalfah",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/bookicon.png",
@@ -22,14 +22,14 @@
         "foregroundImage": "./assets/bookicon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.maestromo.eshalsalfah"
+      "package": "com.mohammadobed.eshalsalfah"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "a7e785db-32f5-4529-9ad7-f22c51c673fa"
+        "projectId": "4e9a7df8-2e31-40a9-bf0e-656a2078a4fe"
       }
     },
     "runtimeVersion": {
@@ -37,6 +37,7 @@
     },
     "updates": {
       "url": "https://u.expo.dev/a7e785db-32f5-4529-9ad7-f22c51c673fa"
-    }
+    },
+    "owner": "mohammadobed"
   }
 }

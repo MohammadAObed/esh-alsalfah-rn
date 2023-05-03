@@ -15,6 +15,7 @@ function useLocalStorage(key, initialValue) {
   const getValue = async () => {
     try {
       const item = await AsyncStorage.getItem(key);
+      // item = null;
       if (item !== null && item !== undefined) {
         setValue((prev) => JSON.parse(item));
       } else {

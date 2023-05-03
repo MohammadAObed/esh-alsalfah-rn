@@ -2,857 +2,1214 @@
   {
     "id": 1,
     "gameId": 1,
-    "name": "كلب"
+    "name": "كلب",
+    "isUsed": true
   },
   {
     "id": 2,
     "gameId": 1,
-    "name": "بسّة"
+    "name": "بسّة",
+    "isUsed": true
   },
   {
     "id": 3,
     "gameId": 1,
-    "name": "خروف"
+    "name": "خروف",
+    "isUsed": true
   },
   {
     "id": 4,
     "gameId": 1,
-    "name": "حصان"
+    "name": "حصان",
+    "isUsed": true
   },
   {
     "id": 5,
     "gameId": 1,
-    "name": "حيّة"
+    "name": "حيّة",
+    "isUsed": true
   },
   {
     "id": 6,
     "gameId": 1,
-    "name": "عصفور"
+    "name": "عصفور",
+    "isUsed": true
   },
   {
     "id": 7,
     "gameId": 1,
-    "name": "غزال"
+    "name": "غزال",
+    "isUsed": true
   },
   {
     "id": 8,
     "gameId": 1,
-    "name": "سمكة"
+    "name": "سمكة",
+    "isUsed": true
   },
   {
     "id": 9,
     "gameId": 1,
-    "name": "سلحفاة"
+    "name": "سلحفاة",
+    "isUsed": true
   },
 
   {
     "id": 10,
     "gameId": 1,
-    "name": "ضفدع"
+    "name": "ضفدع",
+    "isUsed": true
   },
   {
     "id": 11,
     "gameId": 1,
-    "name": "أرنب"
+    "name": "أرنب",
+    "isUsed": true
   },
   {
     "id": 12,
     "gameId": 1,
-    "name": "تمساح"
+    "name": "تمساح",
+    "isUsed": true
   },
   {
     "id": 13,
     "gameId": 1,
-    "name": "كنغر"
+    "name": "كنغر",
+    "isUsed": true
   },
   {
     "id": 14,
     "gameId": 1,
-    "name": "نمر"
+    "name": "نمر",
+    "isUsed": true
   },
   {
     "id": 15,
     "gameId": 1,
-    "name": "أسد"
+    "name": "أسد",
+    "isUsed": true
   },
   {
     "id": 16,
     "gameId": 1,
-    "name": "ببغاء"
+    "name": "ببغاء",
+    "isUsed": true
   },
   {
     "id": 17,
     "gameId": 1,
-    "name": "بطريق"
+    "name": "بطريق",
+    "isUsed": true
   },
   {
     "id": 18,
     "gameId": 1,
-    "name": "دب"
+    "name": "دب",
+    "isUsed": true
   },
   {
     "id": 19,
     "gameId": 1,
-    "name": "سحلية"
+    "name": "سحلية",
+    "isUsed": true
   },
   {
     "id": 20,
     "gameId": 1,
-    "name": "صرصور"
+    "name": "صرصور",
+    "isUsed": true
   },
   {
     "id": 21,
     "gameId": 1,
-    "name": "عنكبوت"
+    "name": "عنكبوت",
+    "isUsed": true
   },
   {
     "id": 22,
     "gameId": 1,
-    "name": "سنجاب"
+    "name": "سنجاب",
+    "isUsed": true
   },
   {
     "id": 23,
     "gameId": 1,
-    "name": "خفاش"
+    "name": "خفاش",
+    "isUsed": true
   },
   {
     "id": 24,
     "gameId": 1,
-    "name": "فيل"
+    "name": "فيل",
+    "isUsed": true
   },
   {
     "id": 25,
     "gameId": 1,
-    "name": "زرافة"
+    "name": "زرافة",
+    "isUsed": true
   },
   {
     "id": 26,
     "gameId": 1,
-    "name": "قرد"
+    "name": "قرد",
+    "isUsed": true
   },
   {
     "id": 27,
     "gameId": 1,
-    "name": "نملة"
+    "name": "نملة",
+    "isUsed": true
   },
   {
     "id": 28,
     "gameId": 1,
-    "name": "بطة"
+    "name": "بطة",
+    "isUsed": true
   },
   {
     "id": 29,
     "gameId": 1,
-    "name": "دجاجة"
+    "name": "دجاجة",
+    "isUsed": true
   },
   {
     "id": 30,
     "gameId": 1,
-    "name": "بقرة"
+    "name": "بقرة",
+    "isUsed": true
   },
   {
     "id": 31,
     "gameId": 1,
-    "name": "ثور"
+    "name": "ثور",
+    "isUsed": true
   },
   {
     "id": 32,
     "gameId": 1,
-    "name": "قنديل البحر"
+    "name": "قنديل البحر",
+    "isUsed": true
   },
   {
     "id": 33,
     "gameId": 1,
-    "name": "اخطبوط"
+    "name": "اخطبوط",
+    "isUsed": true
   },
   {
     "id": 34,
     "gameId": 2,
-    "name": "طاقية"
+    "name": "طاقية",
+    "isUsed": true
   },
   {
     "id": 35,
     "gameId": 2,
-    "name": "بنطلون"
+    "name": "بنطلون رياضة",
+    "isUsed": true
   },
   {
     "id": 36,
     "gameId": 2,
-    "name": "تي شيرت"
+    "name": "تي شيرت",
+    "isUsed": true
   },
   {
     "id": 37,
     "gameId": 2,
-    "name": "فستان"
+    "name": "فستان",
+    "isUsed": true
   },
   {
     "id": 38,
     "gameId": 2,
-    "name": "عقال"
+    "name": "عقال",
+    "isUsed": true
   },
   {
     "id": 39,
     "gameId": 2,
-    "name": "بوت"
+    "name": "بوت",
+    "isUsed": true
   },
   {
     "id": 40,
     "gameId": 2,
-    "name": "حفّاي"
+    "name": "حفّاي",
+    "isUsed": true
   },
   {
     "id": 41,
     "gameId": 2,
-    "name": "قلادة"
+    "name": "قلادة",
+    "isUsed": true
   },
   {
     "id": 42,
     "gameId": 2,
-    "name": "جاكيت"
+    "name": "جاكيت",
+    "isUsed": true
   },
   {
     "id": 43,
     "gameId": 2,
-    "name": "خاتم"
+    "name": "خاتم",
+    "isUsed": true
   },
   {
     "id": 44,
     "gameId": 2,
-    "name": "نظارة"
+    "name": "نظارة",
+    "isUsed": true
   },
   {
     "id": 45,
     "gameId": 2,
-    "name": "نظارة شمسية"
+    "name": "نظارة شمسية",
+    "isUsed": true
   },
   {
     "id": 46,
     "gameId": 2,
-    "name": "حلق"
+    "name": "حلق",
+    "isUsed": true
   },
   {
     "id": 47,
     "gameId": 2,
-    "name": "شورت"
+    "name": "شورت",
+    "isUsed": true
   },
   {
     "id": 48,
     "gameId": 2,
-    "name": "قميص"
+    "name": "قميص",
+    "isUsed": true
   },
   {
     "id": 49,
     "gameId": 2,
-    "name": "بدلة"
+    "name": "بدلة",
+    "isUsed": true
   },
   {
     "id": 50,
     "gameId": 2,
-    "name": "دشداشة"
+    "name": "دشداشة",
+    "isUsed": true
   },
   {
     "id": 51,
     "gameId": 2,
-    "name": "شماغ"
+    "name": "شماغ",
+    "isUsed": true
   },
   {
     "id": 52,
     "gameId": 2,
-    "name": "جرابات"
+    "name": "جرابات",
+    "isUsed": true
   },
   {
     "id": 53,
     "gameId": 2,
-    "name": "شلحة"
+    "name": "شلحة",
+    "isUsed": true
   },
   {
     "id": 54,
     "gameId": 2,
-    "name": "ساعة"
+    "name": "ساعة",
+    "isUsed": true
   },
   {
     "id": 55,
     "gameId": 2,
-    "name": "قشاط"
+    "name": "قشاط",
+    "isUsed": true
   },
   {
     "id": 56,
     "gameId": 2,
-    "name": "شنطة"
+    "name": "شنطة",
+    "isUsed": true
   },
   {
     "id": 57,
     "gameId": 2,
-    "name": "لفحة"
+    "name": "لفحة",
+    "isUsed": true
   },
   {
     "id": 58,
     "gameId": 2,
-    "name": "بلوزة"
+    "name": "بلوزة كم",
+    "isUsed": true
   },
   {
     "id": 59,
     "gameId": 3,
-    "name": "بطاطا"
+    "name": "بطاطا",
+    "isUsed": true
   },
   {
     "id": 60,
     "gameId": 3,
-    "name": "بصل"
+    "name": "بصل",
+    "isUsed": true
   },
   {
     "id": 61,
     "gameId": 3,
-    "name": "كوسا"
+    "name": "كوسا",
+    "isUsed": true
   },
   {
     "id": 62,
     "gameId": 3,
-    "name": "جزر"
+    "name": "جزر",
+    "isUsed": true
   },
   {
     "id": 63,
     "gameId": 3,
-    "name": "خيار"
+    "name": "خيار",
+    "isUsed": true
   },
   {
     "id": 64,
     "gameId": 3,
-    "name": "فلفل حار"
+    "name": "فلفل حار",
+    "isUsed": true
   },
   {
     "id": 65,
     "gameId": 3,
-    "name": "ذرة"
+    "name": "ذرة",
+    "isUsed": true
   },
   {
     "id": 66,
     "gameId": 3,
-    "name": "افوكادو"
+    "name": "افوكادو",
+    "isUsed": true
   },
   {
     "id": 67,
     "gameId": 3,
-    "name": "تفاح"
+    "name": "تفاح",
+    "isUsed": true
   },
   {
     "id": 68,
     "gameId": 3,
-    "name": "ليمون"
+    "name": "ليمون",
+    "isUsed": true
   },
   {
     "id": 69,
     "gameId": 3,
-    "name": "برتقال"
+    "name": "برتقال",
+    "isUsed": true
   },
   {
     "id": 70,
     "gameId": 3,
-    "name": "جريب فروت"
+    "name": "جريب فروت",
+    "isUsed": true
   },
   {
     "id": 71,
     "gameId": 3,
-    "name": "مانجا"
+    "name": "مانجا",
+    "isUsed": true
   },
   {
     "id": 72,
     "gameId": 3,
-    "name": "باذنجان"
+    "name": "باذنجان",
+    "isUsed": true
   },
   {
     "id": 73,
     "gameId": 3,
-    "name": "شمام"
+    "name": "شمام",
+    "isUsed": true
   },
   {
     "id": 74,
     "gameId": 3,
-    "name": "زيتون"
+    "name": "زيتون",
+    "isUsed": true
   },
   {
     "id": 75,
     "gameId": 3,
-    "name": "موز"
+    "name": "موز",
+    "isUsed": true
   },
   {
     "id": 76,
     "gameId": 3,
-    "name": "بطاطا حلوة"
+    "name": "بطاطا حلوة",
+    "isUsed": true
   },
   {
     "id": 77,
     "gameId": 3,
-    "name": "ثوم"
+    "name": "ثوم",
+    "isUsed": true
   },
   {
     "id": 78,
     "gameId": 3,
-    "name": "بطيخ"
+    "name": "بطيخ",
+    "isUsed": true
   },
   {
     "id": 79,
     "gameId": 3,
-    "name": "جرجير"
+    "name": "جرجير",
+    "isUsed": true
   },
   {
     "id": 80,
     "gameId": 3,
-    "name": "بقدونس"
+    "name": "بقدونس",
+    "isUsed": true
   },
   {
     "id": 81,
     "gameId": 3,
-    "name": "نعنع"
+    "name": "نعنع",
+    "isUsed": true
   },
   {
     "id": 82,
     "gameId": 3,
-    "name": "كيوي"
+    "name": "كيوي",
+    "isUsed": true
   },
   {
     "id": 83,
     "gameId": 3,
-    "name": "خوخ"
+    "name": "خوخ",
+    "isUsed": true
   },
   {
     "id": 84,
     "gameId": 3,
-    "name": "كرز"
+    "name": "كرز",
+    "isUsed": true
   },
   {
     "id": 85,
     "gameId": 3,
-    "name": "توت بري"
+    "name": "توت بري",
+    "isUsed": true
   },
   {
     "id": 86,
     "gameId": 3,
-    "name": "أناناس"
+    "name": "أناناس",
+    "isUsed": true
   },
   {
     "id": 87,
     "gameId": 3,
-    "name": "فراولة"
+    "name": "فراولة",
+    "isUsed": true
   },
   {
     "id": 88,
     "gameId": 3,
-    "name": "بروكلي"
+    "name": "بروكلي",
+    "isUsed": true
   },
   {
     "id": 89,
     "gameId": 3,
-    "name": "فطر"
+    "name": "فطر",
+    "isUsed": true
   },
   {
     "id": 90,
     "gameId": 3,
-    "name": "فاصولياء خضراء"
+    "name": "فاصولياء خضراء",
+    "isUsed": true
   },
   {
     "id": 91,
     "gameId": 3,
-    "name": "اجاص"
+    "name": "اجاص",
+    "isUsed": true
   },
   {
     "id": 92,
     "gameId": 4,
-    "name": "نيمار"
+    "name": "نيمار",
+    "isUsed": true
   },
   {
     "id": 93,
     "gameId": 4,
-    "name": "ميسي"
+    "name": "ميسي",
+    "isUsed": true
   },
   {
     "id": 94,
     "gameId": 4,
-    "name": "رونالدو"
+    "name": "رونالدو",
+    "isUsed": true
   },
   {
     "id": 95,
     "gameId": 4,
-    "name": "صلاح"
+    "name": "صلاح",
+    "isUsed": true
   },
   {
     "id": 96,
     "gameId": 4,
-    "name": "دي بروين"
+    "name": "دي بروين",
+    "isUsed": true
   },
   {
     "id": 97,
     "gameId": 4,
-    "name": "مبابي"
+    "name": "مبابي",
+    "isUsed": true
   },
   {
     "id": 98,
     "gameId": 4,
-    "name": "هالاند"
+    "name": "هالاند",
+    "isUsed": true
   },
   {
     "id": 99,
     "gameId": 4,
-    "name": "فان دايك"
+    "name": "فان دايك",
+    "isUsed": true
   },
   {
     "id": 100,
     "gameId": 4,
-    "name": "هازارد"
+    "name": "هازارد",
+    "isUsed": true
   },
   {
     "id": 101,
     "gameId": 4,
-    "name": "بنزيما"
+    "name": "بنزيما",
+    "isUsed": true
   },
   {
     "id": 102,
     "gameId": 4,
-    "name": "حكيم زياش"
+    "name": "حكيم زياش",
+    "isUsed": true
   },
   {
     "id": 103,
     "gameId": 4,
-    "name": "فيروز"
+    "name": "فيروز",
+    "isUsed": true
   },
   {
     "id": 104,
     "gameId": 4,
-    "name": "راموس"
+    "name": "سيرجيو راموس",
+    "isUsed": true
   },
   {
     "id": 105,
     "gameId": 4,
-    "name": "كاسياس"
+    "name": "كاسياس",
+    "isUsed": true
   },
   {
     "id": 106,
     "gameId": 4,
-    "name": "بيكيه"
+    "name": "بيكيه",
+    "isUsed": true
   },
   {
     "id": 107,
     "gameId": 4,
-    "name": "بوسكيتس"
+    "name": "بوسكيتس",
+    "isUsed": true
   },
   {
     "id": 108,
     "gameId": 4,
-    "name": "مدريد"
+    "name": "مدريد",
+    "isUsed": true
   },
   {
     "id": 109,
     "gameId": 4,
-    "name": "برشلونة"
+    "name": "برشلونة",
+    "isUsed": true
   },
   {
     "id": 110,
     "gameId": 4,
-    "name": "ميونخ"
+    "name": "ميونخ",
+    "isUsed": true
   },
   {
     "id": 111,
     "gameId": 4,
-    "name": "ليفربول"
+    "name": "ليفربول",
+    "isUsed": true
   },
   {
     "id": 112,
     "gameId": 4,
-    "name": "تشيلسي"
+    "name": "تشيلسي",
+    "isUsed": true
   },
   {
     "id": 113,
     "gameId": 4,
-    "name": "مانشستر يونايتد"
+    "name": "مانشستر يونايتد",
+    "isUsed": true
   },
   {
     "id": 114,
     "gameId": 4,
-    "name": "مانشستر سيتي"
+    "name": "مانشستر سيتي",
+    "isUsed": true
   },
   {
     "id": 115,
     "gameId": 4,
-    "name": "ارسنال"
+    "name": "ارسنال",
+    "isUsed": true
   },
   {
     "id": 116,
     "gameId": 4,
-    "name": "توتنهام"
+    "name": "توتنهام",
+    "isUsed": true
   },
   {
     "id": 117,
     "gameId": 4,
-    "name": "النصر السعودي"
+    "name": "النصر السعودي",
+    "isUsed": true
   },
   {
     "id": 118,
     "gameId": 4,
-    "name": "دورتموند"
+    "name": "دورتموند",
+    "isUsed": true
   },
   {
     "id": 119,
     "gameId": 4,
-    "name": "يوفنتوس"
+    "name": "يوفنتوس",
+    "isUsed": true
   },
   {
     "id": 120,
     "gameId": 4,
-    "name": "اسي ميلان"
+    "name": "اسي ميلان",
+    "isUsed": true
   },
   {
     "id": 121,
     "gameId": 4,
-    "name": "انتر ميلان"
+    "name": "انتر ميلان",
+    "isUsed": true
   },
   {
     "id": 122,
     "gameId": 4,
-    "name": "باريس سان جيرمان"
+    "name": "باريس سان جيرمان",
+    "isUsed": true
   },
   {
     "id": 123,
     "gameId": 4,
-    "name": "مارسيليا"
+    "name": "مارسيليا",
+    "isUsed": true
   },
   {
     "id": 124,
     "gameId": 4,
-    "name": "نابولي"
+    "name": "نابولي",
+    "isUsed": true
   },
   {
     "id": 125,
     "gameId": 4,
-    "name": "اشبيلية"
+    "name": "اشبيلية",
+    "isUsed": true
   },
   {
     "id": 126,
     "gameId": 5,
-    "name": "بريكنج باد"
+    "name": "بريكنج باد",
+    "isUsed": true
   },
   {
     "id": 127,
     "gameId": 5,
-    "name": "بيكي بلايندرز"
+    "name": "بيكي بلايندرز",
+    "isUsed": true
   },
   {
     "id": 128,
     "gameId": 5,
-    "name": "فاميلي جاي"
+    "name": "فاميلي جاي",
+    "isUsed": true
   },
   {
     "id": 129,
     "gameId": 5,
-    "name": "ذا سيمبسونس"
+    "name": "ذا سيمبسونس",
+    "isUsed": true
   },
   {
     "id": 130,
     "gameId": 5,
-    "name": "مدغشقر"
+    "name": "مدغشقر",
+    "isUsed": true
   },
   {
     "id": 131,
     "gameId": 5,
-    "name": "شريك"
+    "name": "شريك",
+    "isUsed": true
   },
   {
     "id": 132,
     "gameId": 5,
-    "name": "لوست"
+    "name": "لوست",
+    "isUsed": true
   },
   {
     "id": 133,
     "gameId": 5,
-    "name": "بريزون بريك"
+    "name": "بريزون بريك",
+    "isUsed": true
   },
   {
     "id": 134,
     "gameId": 5,
-    "name": "جيم اوف ثرونز"
+    "name": "جيم اوف ثرونز",
+    "isUsed": true
   },
   {
     "id": 135,
     "gameId": 5,
-    "name": "سبونج بوب"
+    "name": "سبونج بوب",
+    "isUsed": true
   },
   {
     "id": 136,
     "gameId": 5,
-    "name": "ستار وورز"
+    "name": "ستار وورز",
+    "isUsed": true
   },
   {
     "id": 137,
     "gameId": 5,
-    "name": "ذا ماتريكس"
+    "name": "ذا ماتريكس",
+    "isUsed": true
   },
   {
     "id": 138,
     "gameId": 5,
-    "name": "تايتنك"
+    "name": "تايتنك",
+    "isUsed": true
   },
   {
     "id": 139,
     "gameId": 5,
-    "name": "اللمبي"
+    "name": "اللمبي",
+    "isUsed": true
   },
   {
     "id": 140,
     "gameId": 5,
-    "name": "توي ستوري"
+    "name": "توي ستوري",
+    "isUsed": true
   },
   {
     "id": 141,
     "gameId": 5,
-    "name": "تمون وبومبا"
+    "name": "تمون وبومبا",
+    "isUsed": true
   },
   {
     "id": 142,
     "gameId": 5,
-    "name": "افتار"
+    "name": "افتار",
+    "isUsed": true
   },
   {
     "id": 143,
     "gameId": 5,
-    "name": "هانجوفر"
+    "name": "هانجوفر",
+    "isUsed": true
   },
   {
     "id": 144,
     "gameId": 5,
-    "name": "لا كاسا دي بابل"
+    "name": "لا كاسا دي بابل",
+    "isUsed": true
   },
   {
     "id": 145,
     "gameId": 5,
-    "name": "هاوس"
+    "name": "هاوس",
+    "isUsed": true
   },
   {
     "id": 146,
     "gameId": 5,
-    "name": "بابلو اسكوبار"
+    "name": "بابلو اسكوبار",
+    "isUsed": true
   },
   {
     "id": 147,
     "gameId": 5,
-    "name": "فريندز"
+    "name": "فريندز",
+    "isUsed": true
   },
   {
     "id": 148,
     "gameId": 5,
-    "name": "توم وجيري"
+    "name": "توم وجيري",
+    "isUsed": true
   },
   {
     "id": 149,
     "gameId": 5,
-    "name": "باتمان"
+    "name": "باتمان",
+    "isUsed": true
   },
   {
     "id": 150,
     "gameId": 5,
-    "name": "سبايدر مان"
+    "name": "سبايدر مان",
+    "isUsed": true
   },
   {
     "id": 151,
     "gameId": 5,
-    "name": "سوبر مان"
+    "name": "سوبر مان",
+    "isUsed": true
   },
   {
     "id": 152,
     "gameId": 5,
-    "name": "سكوبي دو"
+    "name": "سكوبي دو",
+    "isUsed": true
   },
   {
     "id": 153,
     "gameId": 5,
-    "name": "ميكي ماوس"
+    "name": "ميكي ماوس",
+    "isUsed": true
   },
   {
     "id": 154,
     "gameId": 5,
-    "name": "دراجون بول"
+    "name": "دراجون بول",
+    "isUsed": true
   },
   {
     "id": 155,
     "gameId": 6,
-    "name": "ماريو"
+    "name": "ماريو",
+    "isUsed": true
   },
   {
     "id": 156,
     "gameId": 6,
-    "name": "سونيك"
+    "name": "سونيك",
+    "isUsed": true
   },
   {
     "id": 157,
     "gameId": 6,
-    "name": "جراند ثيفت اوتو"
+    "name": "جراند ثيفت اوتو",
+    "isUsed": true
   },
   {
     "id": 158,
     "gameId": 6,
-    "name": "ريزيدنت ايفل"
+    "name": "ريزيدنت ايفل",
+    "isUsed": true
   },
   {
     "id": 159,
     "gameId": 6,
-    "name": "دراجون بول"
+    "name": "دراجون بول",
+    "isUsed": true
   },
   {
     "id": 160,
     "gameId": 6,
-    "name": "المزرعة السعيدة"
+    "name": "المزرعة السعيدة",
+    "isUsed": true
   },
   {
     "id": 161,
     "gameId": 6,
-    "name": "سب وي"
+    "name": "سب وي",
+    "isUsed": true
   },
   {
     "id": 162,
     "gameId": 6,
-    "name": "كول اوف دوتي"
+    "name": "كول اوف دوتي",
+    "isUsed": true
   },
   {
     "id": 163,
     "gameId": 6,
-    "name": "فيفا"
+    "name": "فيفا",
+    "isUsed": true
   },
   {
     "id": 164,
     "gameId": 6,
-    "name": "بيس (كرة القدم)"
+    "name": "بيس (كرة القدم)",
+    "isUsed": true
   },
   {
     "id": 165,
     "gameId": 6,
-    "name": "ريد اليرت"
+    "name": "ريد اليرت",
+    "isUsed": true
   },
   {
     "id": 166,
     "gameId": 6,
-    "name": "ايش السالفة"
+    "name": "ايش السالفة",
+    "isUsed": true
   },
   {
     "id": 167,
     "gameId": 6,
-    "name": "هيتمان"
+    "name": "هيتمان",
+    "isUsed": true
   },
   {
     "id": 168,
     "gameId": 6,
-    "name": "باتمان"
+    "name": "باتمان",
+    "isUsed": true
   },
   {
     "id": 169,
     "gameId": 6,
-    "name": "سبايدرمان"
+    "name": "سبايدرمان",
+    "isUsed": true
   },
   {
     "id": 170,
     "gameId": 6,
-    "name": "طرزان"
+    "name": "طرزان",
+    "isUsed": true
   },
   {
     "id": 171,
     "gameId": 6,
-    "name": "هيركوليز"
+    "name": "هيركوليز",
+    "isUsed": true
+  },
+  {
+    "id": 172,
+    "gameId": 1,
+    "name": "بغل",
+    "isUsed": true
+  },
+  {
+    "id": 173,
+    "gameId": 1,
+    "name": "نحلة",
+    "isUsed": true
+  },
+  {
+    "id": 174,
+    "gameId": 1,
+    "name": "صقر",
+    "isUsed": true
+  },
+  {
+    "id": 175,
+    "gameId": 1,
+    "name": "نسر",
+    "isUsed": true
+  },
+  {
+    "id": 176,
+    "gameId": 6,
+    "name": "دووم",
+    "isUsed": true
+  },
+  {
+    "id": 177,
+    "gameId": 6,
+    "name": "روكيت ليغ",
+    "isUsed": true
+  },
+  {
+    "id": 178,
+    "gameId": 6,
+    "name": "لاست اوف اس",
+    "isUsed": true
+  },
+  {
+    "id": 179,
+    "gameId": 6,
+    "name": "نيد فور سبيد",
+    "isUsed": true
+  },
+  {
+    "id": 180,
+    "gameId": 6,
+    "name": "ريد ديد ريديمبشن",
+    "isUsed": true
+  },
+  {
+    "id": 181,
+    "gameId": 6,
+    "name": "ماين كرافت",
+    "isUsed": true
+  },
+  {
+    "id": 182,
+    "gameId": 6,
+    "name": "فول جايز",
+    "isUsed": true
+  },
+  {
+    "id": 183,
+    "gameId": 5,
+    "name": "الهيبة",
+    "isUsed": true
+  },
+  {
+    "id": 184,
+    "gameId": 5,
+    "name": "طاش ما طاش",
+    "isUsed": true
+  },
+  {
+    "id": 185,
+    "gameId": 4,
+    "name": "صاحبك الطبل",
+    "isUsed": true
+  },
+  {
+    "id": 186,
+    "gameId": 4,
+    "name": "زيدان",
+    "isUsed": true
+  },
+  {
+    "id": 187,
+    "gameId": 4,
+    "name": "بوفون",
+    "isUsed": true
+  },
+  {
+    "id": 188,
+    "gameId": 4,
+    "name": "دي ماريا",
+    "isUsed": true
+  },
+  {
+    "id": 189,
+    "gameId": 4,
+    "name": "بيكهام",
+    "isUsed": true
+  },
+  {
+    "id": 190,
+    "gameId": 4,
+    "name": "لايبزيج",
+    "isUsed": true
+  },
+  {
+    "id": 191,
+    "gameId": 4,
+    "name": "لازيو",
+    "isUsed": true
+  },
+  {
+    "id": 192,
+    "gameId": 4,
+    "name": "بيليه",
+    "isUsed": true
+  },
+  {
+    "id": 193,
+    "gameId": 4,
+    "name": "مارادونا",
+    "isUsed": true
+  },
+  {
+    "id": 194,
+    "gameId": 2,
+    "name": "بنطلون جينز",
+    "isUsed": true
+  },
+  {
+    "id": 195,
+    "gameId": 2,
+    "name": "بجاما",
+    "isUsed": true
+  },
+  {
+    "id": 196,
+    "gameId": 2,
+    "name": "بلوزة نص كم",
+    "isUsed": true
+  },
+  {
+    "id": 197,
+    "gameId": 2,
+    "name": "غرافة",
+    "isUsed": true
+  },
+  {
+    "id": 198,
+    "gameId": 2,
+    "name": "جاكيت جينز",
+    "isUsed": true
+  },
+  {
+    "id": 199,
+    "gameId": 3,
+    "name": "فجل",
+    "isUsed": true
+  },
+  {
+    "id": 201,
+    "gameId": 3,
+    "name": "فاكهة التنين",
+    "isUsed": true
+  },
+  {
+    "id": 202,
+    "gameId": 3,
+    "name": "ملوخية",
+    "isUsed": true
+  },
+  {
+    "id": 203,
+    "gameId": 3,
+    "name": "خبيزة",
+    "isUsed": true
   }
 ]

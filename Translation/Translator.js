@@ -4,8 +4,8 @@ const EnglishTranslator = {
   InfoMsg: "Play With Friends, Until one Friend Plays you",
   ByMo: "By Abo Obed",
   Animals: "Animals",
-  Cloths: "Cloths",
-  Viggies: "Viggies",
+  Cloths: "Clothes",
+  Viggies: "Veggies",
   Football: "Football",
   FilmsAndSeries: "Films And Series",
   Games: "Games",
@@ -42,6 +42,10 @@ const EnglishTranslator = {
   ChangePlayers: "Change Players",
   Credits: "Credits",
   GameInspiredBy: "Game Inspired By",
+  ModifyGame: "Modify Game",
+  Used: "Used",
+  NotUsed: "Not Used",
+  ClickOnAWord: "Click On A Word",
 };
 
 const ArabicTranslator = {
@@ -87,6 +91,10 @@ const ArabicTranslator = {
   ChangePlayers: "تغيير اللاعبين",
   Credits: "كريدتس",
   GameInspiredBy: "اللعبة مستوحاة من",
+  ModifyGame: "عدّل اللعبة",
+  Used: "مستخدم",
+  NotUsed: "غير مستخدم",
+  ClickOnAWord: "انقر على كلمة",
 };
 
 export const Translator = {

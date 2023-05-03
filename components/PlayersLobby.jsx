@@ -18,10 +18,16 @@ import { Translator } from "../Translation/Translator";
 
 const PlayersLobby = () => {
   const { language, playSound } = useAppContext();
-
   //setPlayers will invoke the useEffect with useLocalStorage
-  const { players, setPlayers, showModal, hideModal, modalVisible, setStatus } =
-    useGameContext();
+  const {
+    players,
+    setPlayers,
+    showModal,
+    hideModal,
+    modalVisible,
+    setStatus,
+    currentGame,
+  } = useGameContext();
   const { isPlayersEmpty, removePlayer, addPlayer } = usePlayerStuff(
     players,
     setPlayers
@@ -101,30 +107,26 @@ const PlayersLobby = () => {
           </Text>
         </TouchableOpacity>
       </View>
-      <GameModal hideModal={hideModal} modalVisible={modalVisible}>
-        <View className="flex-row mt-3">
-          <TouchableOpacity
-            className="px-5 py-1 bg-[#aba969] rounded-sm"
-            onPress={() => {
-              playSound();
-              handleSubmit();
-            }}
-          >
-            <Text className="text-white text-2xl">
-              {Translator[language].Add}
-            </Text>
-          </TouchableOpacity>
-          <TextInput
-            className="bg-[#333] text-white flex-1 px-2 py-2 text-right"
-            placeholder={`${Translator[language].AddPlayer}`}
-            onChange={handleTextChange}
-            value={playerInput}
-            // ref={inputRef}
-            onSubmitEditing={handleSubmit}
-            autoFocus={true}
-          />
-        </View>
-      </GameModal>
+      <TouchableOpacity
+        onPress={() => {
+          playSound();
+          setStatus(gameStatusEnum.ModifyGame);
+        }}
+        className="px-10 py-2.5 bg-[#aba969] rounded-sm"
+      >
+        <Text className="text-white text-3xl text-center">
+          {Translator[language].ModifyGame}
+        </Text>
+      </TouchableOpacity>
+      <AddPlayerModal
+        hideModal={hideModal}
+        modalVisible={modalVisible}
+        playSound={playSound}
+        handleSubmit={handleSubmit}
+        handleTextChange={handleTextChange}
+        playerInput={playerInput}
+        language={language}
+      />
     </View>
   );
 };
@@ -150,5 +152,42 @@ const Player = ({ name, points, id, removePlayer, language, playSound }) => {
       </TouchableOpacity>
       <Text className="text-white text-3xl">{name}</Text>
     </View>
+  );
+};
+
+const AddPlayerModal = ({
+  hideModal,
+  modalVisible,
+  playSound,
+  handleSubmit,
+  handleTextChange,
+  playerInput,
+  language,
+}) => {
+  return (
+    <GameModal hideModal={hideModal} modalVisible={modalVisible}>
+      <View className="flex-row mt-3">
+        <TouchableOpacity
+          className="px-5 py-1 bg-[#aba969] rounded-sm"
+          onPress={() => {
+            playSound();
+            handleSubmit();
+          }}
+        >
+          <Text className="text-white text-2xl">
+            {Translator[language].Add}
+          </Text>
+        </TouchableOpacity>
+        <TextInput
+          className="bg-[#333] text-white flex-1 px-2 py-2 text-right"
+          placeholder={`${Translator[language].AddPlayer}`}
+          onChange={handleTextChange}
+          value={playerInput}
+          // ref={inputRef}
+          onSubmitEditing={handleSubmit}
+          autoFocus={true}
+        />
+      </View>
+    </GameModal>
   );
 };

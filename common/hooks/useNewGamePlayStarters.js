@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { getRandomItemFromArray } from "../utils";
-function useNewGameStarters(GamesJSONDetails, singleGame, players, status) {
-  const [singleGameDetails, setSingleGameDetails] = useState({});
+function useNewGameStarters(GameDetails, currentGame, players, status) {
+  const [currentGameDetails, setCurrentGameDetails] = useState({});
   const [imposter, setImpost] = useState({});
   const [makeNewGameStarters, setMakeNewGameStarters] = useState(false);
   useEffect(() => {
     if (makeNewGameStarters == false) return;
-    const chosenDetails = GamesJSONDetails.filter(
-      (x) => x.gameId == singleGame.id
+    const chosenDetails = GameDetails.filter(
+      (x) => x.gameId == currentGame.id && x.isUsed
     );
-    setSingleGameDetails((prev) => {
+    setCurrentGameDetails((prev) => {
       return getRandomItemFromArray(chosenDetails);
     });
     setImpost((prev) => {
@@ -17,7 +17,7 @@ function useNewGameStarters(GamesJSONDetails, singleGame, players, status) {
     });
     setMakeNewGameStarters(false);
   }, [makeNewGameStarters]);
-  return [singleGameDetails, imposter, setMakeNewGameStarters];
+  return [currentGameDetails, imposter, setMakeNewGameStarters];
 }
 
 export default useNewGameStarters;

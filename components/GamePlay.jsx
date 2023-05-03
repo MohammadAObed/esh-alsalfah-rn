@@ -19,12 +19,15 @@ import PlayersPoints from "./PlayersPoints";
 import PlayersRoundEnd from "./PlayersRoundEnd";
 import { gameStatusEnum } from "../common/gamePlayEnums";
 import Navbar from "./Navbar";
+import GameDetailsScreen from "../screens/GameDetailsScreen";
 
 const GamePlay = () => {
   const { status } = useGameContext();
   return (
     <SafeAreaView className="flex-1 bg-[#333]">
       {/* <Navbar /> */}
+      {status === gameStatusEnum.ModifyGame && <GameDetailsScreen />}
+
       {status === gameStatusEnum.CreatePlayers && <PlayersLobby />}
       {status === gameStatusEnum.RevealRoles && <PlayersRoles />}
       {status === gameStatusEnum.Questions && <PlayersQuestions />}

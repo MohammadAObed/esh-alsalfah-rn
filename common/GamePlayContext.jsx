@@ -27,12 +27,16 @@ function GameContextProvider({ children }) {
   const [status, setStatus] = useState(gameStatusEnum.CreatePlayers);
   const [players, setPlayers] = useLocalStorage("ESH_ALS_Players", []);
   // const [players, setPlayers] = useState([]);
-  const [singleGame] = useState(() => {
+  const [currentGame] = useState(() => {
     return GamesListJSON.find((g) => g.id == id) || null;
   });
+  const [currentGameDetails, setCurrentGameDetails] = useLocalStorage(
+    "ESH_ALS_GameDetails",
+    GamesListDetailsJSON
+  );
   const [gameAnswer, imposter, setMakeNewGameStarters] = useNewGameStarters(
-    GamesListDetailsJSON,
-    singleGame,
+    currentGameDetails,
+    currentGame,
     players,
     status
   );
@@ -40,7 +44,7 @@ function GameContextProvider({ children }) {
     // console.count();
     // console.log(gameAnswer);
   });
-  if (!singleGame) {
+  if (!currentGame) {
     return (
       <Text className="mx-16 mt-10">
         اللعبة غير موجودة، الرجوع الى الصفحة الرئيسية
@@ -52,7 +56,7 @@ function GameContextProvider({ children }) {
       value={{
         players,
         setPlayers,
-        singleGame,
+        currentGame,
         showModal,
         hideModal,
         modalVisible,
@@ -61,6 +65,8 @@ function GameContextProvider({ children }) {
         gameAnswer,
         imposter,
         setMakeNewGameStarters,
+        currentGameDetails,
+        setCurrentGameDetails,
       }}
     >
       {children}

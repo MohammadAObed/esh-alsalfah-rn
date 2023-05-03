@@ -8,6 +8,7 @@ export const gameStatusEnum = {
   ImposterAnswer: 7,
   ShowPoints: 8,
   RoundEnd: 9,
+  ModifyGame: 0,
 };
 
 export const soundsEnum = {

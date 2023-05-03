@@ -10,12 +10,12 @@ import { Translator } from "../Translation/Translator";
 const numberOfRandomAnswer = 7;
 
 const PlayersImposterAnswer = () => {
-  const { imposter, singleGame, gameAnswer, setStatus, setPlayers, players } =
+  const { imposter, currentGame, gameAnswer, setStatus, setPlayers, players } =
     useGameContext();
   const [imposterAnswer, setImposterAnswer] = useState({ id: 0 });
   const [randomAnswers, setRandomAnswers] = useState(
     getRandomAnswers(
-      GamesJSONDetails.filter((x) => x.gameId == singleGame.id),
+      GamesJSONDetails.filter((x) => x.gameId == currentGame.id),
       numberOfRandomAnswer,
       gameAnswer
     )

@@ -1,1215 +1,1205 @@
 [
   {
+    "id": -1,
+    "gameId": -1,
+    "name": "version",
+    "isUsed": false,
+    "version": 1.1,
+    "isVersion": true
+  },
+  {
     "id": 1,
     "gameId": 1,
-    "name": "كلب",
+    "name": "Dog",
     "isUsed": true
   },
   {
     "id": 2,
     "gameId": 1,
-    "name": "بسّة",
+    "name": "Cat",
     "isUsed": true
   },
   {
     "id": 3,
     "gameId": 1,
-    "name": "خروف",
+    "name": "Sheep",
     "isUsed": true
   },
   {
     "id": 4,
     "gameId": 1,
-    "name": "حصان",
+    "name": "Horse",
     "isUsed": true
   },
   {
     "id": 5,
     "gameId": 1,
-    "name": "حيّة",
+    "name": "Snake",
     "isUsed": true
   },
   {
     "id": 6,
     "gameId": 1,
-    "name": "عصفور",
+    "name": "Bird",
     "isUsed": true
   },
   {
     "id": 7,
     "gameId": 1,
-    "name": "غزال",
+    "name": "Deer",
     "isUsed": true
   },
   {
     "id": 8,
     "gameId": 1,
-    "name": "سمكة",
+    "name": "Fish",
     "isUsed": true
   },
   {
     "id": 9,
     "gameId": 1,
-    "name": "سلحفاة",
+    "name": "Turtle",
     "isUsed": true
   },
 
   {
     "id": 10,
     "gameId": 1,
-    "name": "ضفدع",
+    "name": "Frog",
     "isUsed": true
   },
   {
     "id": 11,
     "gameId": 1,
-    "name": "أرنب",
+    "name": "Rabbit",
     "isUsed": true
   },
   {
     "id": 12,
     "gameId": 1,
-    "name": "تمساح",
+    "name": "Crocodile",
     "isUsed": true
   },
   {
     "id": 13,
     "gameId": 1,
-    "name": "كنغر",
+    "name": "Kangaroo",
     "isUsed": true
   },
   {
     "id": 14,
     "gameId": 1,
-    "name": "نمر",
+    "name": "Tiger",
     "isUsed": true
   },
   {
     "id": 15,
     "gameId": 1,
-    "name": "أسد",
+    "name": "Lion",
     "isUsed": true
   },
   {
     "id": 16,
     "gameId": 1,
-    "name": "ببغاء",
+    "name": "Parrot",
     "isUsed": true
   },
   {
     "id": 17,
     "gameId": 1,
-    "name": "بطريق",
+    "name": "Penguin",
     "isUsed": true
   },
   {
     "id": 18,
     "gameId": 1,
-    "name": "دب",
+    "name": "Bear",
     "isUsed": true
   },
   {
     "id": 19,
     "gameId": 1,
-    "name": "سحلية",
+    "name": "Lizard",
     "isUsed": true
   },
   {
     "id": 20,
     "gameId": 1,
-    "name": "صرصور",
+    "name": "Cockroach",
     "isUsed": true
   },
   {
     "id": 21,
     "gameId": 1,
-    "name": "عنكبوت",
+    "name": "Spider",
     "isUsed": true
   },
   {
     "id": 22,
     "gameId": 1,
-    "name": "سنجاب",
+    "name": "Squirrel",
     "isUsed": true
   },
   {
     "id": 23,
     "gameId": 1,
-    "name": "خفاش",
+    "name": "Bat",
     "isUsed": true
   },
   {
     "id": 24,
     "gameId": 1,
-    "name": "فيل",
+    "name": "Elephant",
     "isUsed": true
   },
   {
     "id": 25,
     "gameId": 1,
-    "name": "زرافة",
+    "name": "Giraffe",
     "isUsed": true
   },
   {
     "id": 26,
     "gameId": 1,
-    "name": "قرد",
+    "name": "Monkey",
     "isUsed": true
   },
   {
     "id": 27,
     "gameId": 1,
-    "name": "نملة",
+    "name": "Ant",
     "isUsed": true
   },
   {
     "id": 28,
     "gameId": 1,
-    "name": "بطة",
+    "name": "Duck",
     "isUsed": true
   },
   {
     "id": 29,
     "gameId": 1,
-    "name": "دجاجة",
+    "name": "Chicken",
     "isUsed": true
   },
   {
     "id": 30,
     "gameId": 1,
-    "name": "بقرة",
+    "name": "Cow",
     "isUsed": true
   },
   {
     "id": 31,
     "gameId": 1,
-    "name": "ثور",
+    "name": "Bull",
     "isUsed": true
   },
   {
     "id": 32,
     "gameId": 1,
-    "name": "قنديل البحر",
+    "name": "Jellyfish",
     "isUsed": true
   },
   {
     "id": 33,
     "gameId": 1,
-    "name": "اخطبوط",
+    "name": "Octopus",
     "isUsed": true
   },
   {
     "id": 34,
     "gameId": 2,
-    "name": "طاقية",
+    "name": "Hat",
     "isUsed": true
   },
   {
     "id": 35,
     "gameId": 2,
-    "name": "بنطلون رياضة",
+    "name": "Tracksuit",
     "isUsed": true
   },
   {
     "id": 36,
     "gameId": 2,
-    "name": "تي شيرت",
+    "name": "T-shirt",
     "isUsed": true
   },
   {
     "id": 37,
     "gameId": 2,
-    "name": "فستان",
+    "name": "Dress",
     "isUsed": true
   },
   {
     "id": 38,
     "gameId": 2,
-    "name": "عقال",
+    "name": "Headband",
     "isUsed": true
   },
   {
     "id": 39,
     "gameId": 2,
-    "name": "بوت",
+    "name": "Boot",
     "isUsed": true
   },
   {
     "id": 40,
     "gameId": 2,
-    "name": "حفّاي",
+    "name": "Slippers",
     "isUsed": true
   },
   {
     "id": 41,
     "gameId": 2,
-    "name": "قلادة",
+    "name": "Necklace",
     "isUsed": true
   },
   {
     "id": 42,
     "gameId": 2,
-    "name": "جاكيت",
+    "name": "Jacket",
     "isUsed": true
   },
   {
     "id": 43,
     "gameId": 2,
-    "name": "خاتم",
+    "name": "Ring",
     "isUsed": true
   },
   {
     "id": 44,
     "gameId": 2,
-    "name": "نظارة",
+    "name": "Glasses",
     "isUsed": true
   },
   {
     "id": 45,
     "gameId": 2,
-    "name": "نظارة شمسية",
+    "name": "Sunglasses",
     "isUsed": true
   },
   {
     "id": 46,
     "gameId": 2,
-    "name": "حلق",
+    "name": "Earrings",
     "isUsed": true
   },
   {
     "id": 47,
     "gameId": 2,
-    "name": "شورت",
+    "name": "Shorts",
     "isUsed": true
   },
   {
     "id": 48,
     "gameId": 2,
-    "name": "قميص",
+    "name": "Shirt",
     "isUsed": true
   },
   {
     "id": 49,
     "gameId": 2,
-    "name": "بدلة",
+    "name": "Suit",
     "isUsed": true
   },
   {
     "id": 50,
     "gameId": 2,
-    "name": "دشداشة",
+    "name": "Thobe",
     "isUsed": true
   },
   {
     "id": 51,
     "gameId": 2,
-    "name": "شماغ",
+    "name": "Shemagh",
     "isUsed": true
   },
   {
     "id": 52,
     "gameId": 2,
-    "name": "جرابات",
+    "name": "Socks",
     "isUsed": true
   },
   {
     "id": 53,
     "gameId": 2,
-    "name": "شلحة",
+    "name": "Undershirt",
     "isUsed": true
   },
   {
     "id": 54,
     "gameId": 2,
-    "name": "ساعة",
+    "name": "Watch",
     "isUsed": true
   },
   {
     "id": 55,
     "gameId": 2,
-    "name": "قشاط",
+    "name": "Belt",
     "isUsed": true
   },
   {
     "id": 56,
     "gameId": 2,
-    "name": "شنطة",
+    "name": "Bag",
     "isUsed": true
   },
   {
     "id": 57,
     "gameId": 2,
-    "name": "لفحة",
+    "name": "Scarf",
     "isUsed": true
   },
   {
     "id": 58,
     "gameId": 2,
-    "name": "بلوزة كم",
+    "name": "LongSleeveShirt",
     "isUsed": true
   },
   {
     "id": 59,
     "gameId": 3,
-    "name": "بطاطا",
+    "name": "Potato",
     "isUsed": true
   },
   {
     "id": 60,
     "gameId": 3,
-    "name": "بصل",
+    "name": "Onion",
     "isUsed": true
   },
   {
     "id": 61,
     "gameId": 3,
-    "name": "كوسا",
+    "name": "Zucchini",
     "isUsed": true
   },
   {
     "id": 62,
     "gameId": 3,
-    "name": "جزر",
+    "name": "Carrot",
     "isUsed": true
   },
   {
     "id": 63,
     "gameId": 3,
-    "name": "خيار",
+    "name": "Cucumber",
     "isUsed": true
   },
   {
     "id": 64,
     "gameId": 3,
-    "name": "فلفل حار",
+    "name": "Chili",
     "isUsed": true
   },
   {
     "id": 65,
     "gameId": 3,
-    "name": "ذرة",
+    "name": "Corn",
     "isUsed": true
   },
   {
     "id": 66,
     "gameId": 3,
-    "name": "افوكادو",
+    "name": "Avocado",
     "isUsed": true
   },
   {
     "id": 67,
     "gameId": 3,
-    "name": "تفاح",
+    "name": "Apple",
     "isUsed": true
   },
   {
     "id": 68,
     "gameId": 3,
-    "name": "ليمون",
+    "name": "Lemon",
     "isUsed": true
   },
   {
     "id": 69,
     "gameId": 3,
-    "name": "برتقال",
+    "name": "Orange",
     "isUsed": true
   },
   {
     "id": 70,
     "gameId": 3,
-    "name": "جريب فروت",
+    "name": "Grapefruit",
     "isUsed": true
   },
   {
     "id": 71,
     "gameId": 3,
-    "name": "مانجا",
+    "name": "Mango",
     "isUsed": true
   },
   {
     "id": 72,
     "gameId": 3,
-    "name": "باذنجان",
+    "name": "Eggplant",
     "isUsed": true
   },
   {
     "id": 73,
     "gameId": 3,
-    "name": "شمام",
+    "name": "Melon",
     "isUsed": true
   },
   {
     "id": 74,
     "gameId": 3,
-    "name": "زيتون",
+    "name": "Olive",
     "isUsed": true
   },
   {
     "id": 75,
     "gameId": 3,
-    "name": "موز",
+    "name": "Banana",
     "isUsed": true
   },
   {
     "id": 76,
     "gameId": 3,
-    "name": "بطاطا حلوة",
+    "name": "SweetPotato",
     "isUsed": true
   },
   {
     "id": 77,
     "gameId": 3,
-    "name": "ثوم",
+    "name": "Garlic",
     "isUsed": true
   },
   {
     "id": 78,
     "gameId": 3,
-    "name": "بطيخ",
+    "name": "Watermelon",
     "isUsed": true
   },
   {
     "id": 79,
     "gameId": 3,
-    "name": "جرجير",
+    "name": "Arugula",
     "isUsed": true
   },
   {
     "id": 80,
     "gameId": 3,
-    "name": "بقدونس",
+    "name": "Parsley",
     "isUsed": true
   },
   {
     "id": 81,
     "gameId": 3,
-    "name": "نعنع",
+    "name": "Mint",
     "isUsed": true
   },
   {
     "id": 82,
     "gameId": 3,
-    "name": "كيوي",
+    "name": "Kiwi",
     "isUsed": true
   },
   {
     "id": 83,
     "gameId": 3,
-    "name": "خوخ",
+    "name": "Peach",
     "isUsed": true
   },
   {
     "id": 84,
     "gameId": 3,
-    "name": "كرز",
+    "name": "Cherry",
     "isUsed": true
   },
   {
     "id": 85,
     "gameId": 3,
-    "name": "توت بري",
+    "name": "Blueberry",
     "isUsed": true
   },
   {
     "id": 86,
     "gameId": 3,
-    "name": "أناناس",
+    "name": "Pineapple",
     "isUsed": true
   },
   {
     "id": 87,
     "gameId": 3,
-    "name": "فراولة",
+    "name": "Strawberry",
     "isUsed": true
   },
   {
     "id": 88,
     "gameId": 3,
-    "name": "بروكلي",
+    "name": "Broccoli",
     "isUsed": true
   },
   {
     "id": 89,
     "gameId": 3,
-    "name": "فطر",
+    "name": "Mushroom",
     "isUsed": true
   },
   {
     "id": 90,
     "gameId": 3,
-    "name": "فاصولياء خضراء",
+    "name": "GreenBeans",
     "isUsed": true
   },
   {
     "id": 91,
     "gameId": 3,
-    "name": "اجاص",
+    "name": "Pear",
     "isUsed": true
   },
   {
     "id": 92,
     "gameId": 4,
-    "name": "نيمار",
+    "name": "Neymar",
     "isUsed": true
   },
   {
     "id": 93,
     "gameId": 4,
-    "name": "ميسي",
+    "name": "Messi",
     "isUsed": true
   },
   {
     "id": 94,
     "gameId": 4,
-    "name": "رونالدو",
+    "name": "Ronaldo",
     "isUsed": true
   },
   {
     "id": 95,
     "gameId": 4,
-    "name": "صلاح",
+    "name": "Salah",
     "isUsed": true
   },
   {
     "id": 96,
     "gameId": 4,
-    "name": "دي بروين",
+    "name": "DeBruyne",
     "isUsed": true
   },
   {
     "id": 97,
     "gameId": 4,
-    "name": "مبابي",
+    "name": "Mbappe",
     "isUsed": true
   },
   {
     "id": 98,
     "gameId": 4,
-    "name": "هالاند",
+    "name": "Haaland",
     "isUsed": true
   },
   {
     "id": 99,
     "gameId": 4,
-    "name": "فان دايك",
+    "name": "VanDijk",
     "isUsed": true
   },
   {
     "id": 100,
     "gameId": 4,
-    "name": "هازارد",
+    "name": "Hazard",
     "isUsed": true
   },
   {
     "id": 101,
     "gameId": 4,
-    "name": "بنزيما",
+    "name": "Benzema",
     "isUsed": true
   },
   {
     "id": 102,
     "gameId": 4,
-    "name": "حكيم زياش",
+    "name": "HakimZiyech",
     "isUsed": true
   },
   {
     "id": 103,
     "gameId": 4,
-    "name": "فيروز",
+    "name": "Modric",
     "isUsed": true
   },
   {
     "id": 104,
     "gameId": 4,
-    "name": "سيرجيو راموس",
+    "name": "SergioRamos",
     "isUsed": true
   },
   {
     "id": 105,
     "gameId": 4,
-    "name": "كاسياس",
+    "name": "Casillas",
     "isUsed": true
   },
   {
     "id": 106,
     "gameId": 4,
-    "name": "بيكيه",
+    "name": "Pique",
     "isUsed": true
   },
   {
     "id": 107,
     "gameId": 4,
-    "name": "بوسكيتس",
+    "name": "Busquets",
     "isUsed": true
   },
   {
     "id": 108,
     "gameId": 4,
-    "name": "مدريد",
+    "name": "Madrid",
     "isUsed": true
   },
   {
     "id": 109,
     "gameId": 4,
-    "name": "برشلونة",
+    "name": "Barcelona",
     "isUsed": true
   },
   {
     "id": 110,
     "gameId": 4,
-    "name": "ميونخ",
+    "name": "Munich",
     "isUsed": true
   },
   {
     "id": 111,
     "gameId": 4,
-    "name": "ليفربول",
+    "name": "Liverpool",
     "isUsed": true
   },
   {
     "id": 112,
     "gameId": 4,
-    "name": "تشيلسي",
+    "name": "Chelsea",
     "isUsed": true
   },
   {
     "id": 113,
     "gameId": 4,
-    "name": "مانشستر يونايتد",
+    "name": "ManchesterUnited",
     "isUsed": true
   },
   {
     "id": 114,
     "gameId": 4,
-    "name": "مانشستر سيتي",
+    "name": "ManchesterCity",
     "isUsed": true
   },
   {
     "id": 115,
     "gameId": 4,
-    "name": "ارسنال",
+    "name": "Arsenal",
     "isUsed": true
   },
   {
     "id": 116,
     "gameId": 4,
-    "name": "توتنهام",
+    "name": "Tottenham",
     "isUsed": true
   },
   {
     "id": 117,
     "gameId": 4,
-    "name": "النصر السعودي",
+    "name": "AlNassr",
     "isUsed": true
   },
   {
     "id": 118,
     "gameId": 4,
-    "name": "دورتموند",
+    "name": "Dortmund",
     "isUsed": true
   },
   {
     "id": 119,
     "gameId": 4,
-    "name": "يوفنتوس",
+    "name": "Juventus",
     "isUsed": true
   },
   {
     "id": 120,
     "gameId": 4,
-    "name": "اسي ميلان",
+    "name": "ACMilan",
     "isUsed": true
   },
   {
     "id": 121,
     "gameId": 4,
-    "name": "انتر ميلان",
+    "name": "InterMilan",
     "isUsed": true
   },
   {
     "id": 122,
     "gameId": 4,
-    "name": "باريس سان جيرمان",
+    "name": "ParisSaintGermain",
     "isUsed": true
   },
   {
     "id": 123,
     "gameId": 4,
-    "name": "مارسيليا",
+    "name": "Marseille",
     "isUsed": true
   },
   {
     "id": 124,
     "gameId": 4,
-    "name": "نابولي",
+    "name": "Napoli",
     "isUsed": true
   },
   {
     "id": 125,
     "gameId": 4,
-    "name": "اشبيلية",
+    "name": "Sevilla",
     "isUsed": true
   },
   {
     "id": 126,
     "gameId": 5,
-    "name": "بريكنج باد",
+    "name": "BreakingBad",
     "isUsed": true
   },
   {
     "id": 127,
     "gameId": 5,
-    "name": "بيكي بلايندرز",
+    "name": "PeakyBlinders",
     "isUsed": true
   },
   {
     "id": 128,
     "gameId": 5,
-    "name": "فاميلي جاي",
+    "name": "FamilyGuy",
     "isUsed": true
   },
   {
     "id": 129,
     "gameId": 5,
-    "name": "ذا سيمبسونس",
+    "name": "TheSimpsons",
     "isUsed": true
   },
   {
     "id": 130,
     "gameId": 5,
-    "name": "مدغشقر",
+    "name": "Madagascar",
     "isUsed": true
   },
   {
     "id": 131,
     "gameId": 5,
-    "name": "شريك",
+    "name": "Shrek",
     "isUsed": true
   },
   {
     "id": 132,
     "gameId": 5,
-    "name": "لوست",
+    "name": "Lost",
     "isUsed": true
   },
   {
     "id": 133,
     "gameId": 5,
-    "name": "بريزون بريك",
+    "name": "PrisonBreak",
     "isUsed": true
   },
   {
     "id": 134,
     "gameId": 5,
-    "name": "جيم اوف ثرونز",
+    "name": "GameOfThrones",
     "isUsed": true
   },
   {
     "id": 135,
     "gameId": 5,
-    "name": "سبونج بوب",
+    "name": "SpongeBob",
     "isUsed": true
   },
   {
     "id": 136,
     "gameId": 5,
-    "name": "ستار وورز",
+    "name": "StarWars",
     "isUsed": true
   },
   {
     "id": 137,
     "gameId": 5,
-    "name": "ذا ماتريكس",
+    "name": "TheMatrix",
     "isUsed": true
   },
   {
     "id": 138,
     "gameId": 5,
-    "name": "تايتنك",
+    "name": "Titanic",
     "isUsed": true
   },
   {
     "id": 139,
     "gameId": 5,
-    "name": "اللمبي",
+    "name": "ElLemby",
     "isUsed": true
   },
   {
     "id": 140,
     "gameId": 5,
-    "name": "توي ستوري",
+    "name": "ToyStory",
     "isUsed": true
   },
   {
     "id": 141,
     "gameId": 5,
-    "name": "تمون وبومبا",
+    "name": "TimonAndPumbaa",
     "isUsed": true
   },
   {
     "id": 142,
     "gameId": 5,
-    "name": "افتار",
+    "name": "Avatar",
     "isUsed": true
   },
   {
     "id": 143,
     "gameId": 5,
-    "name": "هانجوفر",
+    "name": "TheHangover",
     "isUsed": true
   },
   {
     "id": 144,
     "gameId": 5,
-    "name": "لا كاسا دي بابل",
+    "name": "SquidGame",
     "isUsed": true
   },
   {
     "id": 145,
     "gameId": 5,
-    "name": "هاوس",
+    "name": "House",
     "isUsed": true
   },
   {
     "id": 146,
     "gameId": 5,
-    "name": "بابلو اسكوبار",
+    "name": "PabloEscobar",
     "isUsed": true
   },
   {
     "id": 147,
     "gameId": 5,
-    "name": "فريندز",
+    "name": "Friends",
     "isUsed": true
   },
   {
     "id": 148,
     "gameId": 5,
-    "name": "توم وجيري",
+    "name": "TomAndJerry",
     "isUsed": true
   },
   {
     "id": 149,
     "gameId": 5,
-    "name": "باتمان",
+    "name": "Batman",
     "isUsed": true
   },
   {
     "id": 150,
     "gameId": 5,
-    "name": "سبايدر مان",
+    "name": "SpiderMan",
     "isUsed": true
   },
   {
     "id": 151,
     "gameId": 5,
-    "name": "سوبر مان",
+    "name": "Superman",
     "isUsed": true
   },
   {
     "id": 152,
     "gameId": 5,
-    "name": "سكوبي دو",
+    "name": "ScoobyDoo",
     "isUsed": true
   },
   {
     "id": 153,
     "gameId": 5,
-    "name": "ميكي ماوس",
+    "name": "MickeyMouse",
     "isUsed": true
   },
   {
     "id": 154,
     "gameId": 5,
-    "name": "دراجون بول",
+    "name": "DragonBall",
     "isUsed": true
   },
   {
     "id": 155,
     "gameId": 6,
-    "name": "ماريو",
+    "name": "Mario",
     "isUsed": true
   },
   {
     "id": 156,
     "gameId": 6,
-    "name": "سونيك",
+    "name": "Sonic",
     "isUsed": true
   },
   {
     "id": 157,
     "gameId": 6,
-    "name": "جراند ثيفت اوتو",
+    "name": "GrandTheftAuto",
     "isUsed": true
   },
   {
     "id": 158,
     "gameId": 6,
-    "name": "ريزيدنت ايفل",
-    "isUsed": true
-  },
-  {
-    "id": 159,
-    "gameId": 6,
-    "name": "دراجون بول",
+    "name": "ResidentEvil",
     "isUsed": true
   },
   {
     "id": 160,
     "gameId": 6,
-    "name": "المزرعة السعيدة",
+    "name": "HappyFarm",
     "isUsed": true
   },
   {
     "id": 161,
     "gameId": 6,
-    "name": "سب وي",
+    "name": "SubwaySurfers",
     "isUsed": true
   },
   {
     "id": 162,
     "gameId": 6,
-    "name": "كول اوف دوتي",
+    "name": "CallOfDuty",
     "isUsed": true
   },
   {
     "id": 163,
     "gameId": 6,
-    "name": "فيفا",
+    "name": "FIFA",
     "isUsed": true
   },
   {
     "id": 164,
     "gameId": 6,
-    "name": "بيس (كرة القدم)",
+    "name": "PES",
     "isUsed": true
   },
   {
     "id": 165,
     "gameId": 6,
-    "name": "ريد اليرت",
+    "name": "RedAlert",
     "isUsed": true
   },
   {
     "id": 166,
     "gameId": 6,
-    "name": "ايش السالفة",
+    "name": "WhatsTheTopicGame",
     "isUsed": true
   },
   {
     "id": 167,
     "gameId": 6,
-    "name": "هيتمان",
-    "isUsed": true
-  },
-  {
-    "id": 168,
-    "gameId": 6,
-    "name": "باتمان",
-    "isUsed": true
-  },
-  {
-    "id": 169,
-    "gameId": 6,
-    "name": "سبايدرمان",
+    "name": "Hitman",
     "isUsed": true
   },
   {
     "id": 170,
     "gameId": 6,
-    "name": "طرزان",
+    "name": "Tarzan",
     "isUsed": true
   },
   {
     "id": 171,
     "gameId": 6,
-    "name": "هيركوليز",
+    "name": "Hercules",
     "isUsed": true
   },
   {
     "id": 172,
     "gameId": 1,
-    "name": "بغل",
+    "name": "Mule",
     "isUsed": true
   },
   {
     "id": 173,
     "gameId": 1,
-    "name": "نحلة",
+    "name": "Bee",
     "isUsed": true
   },
   {
     "id": 174,
     "gameId": 1,
-    "name": "صقر",
+    "name": "Falcon",
     "isUsed": true
   },
   {
     "id": 175,
     "gameId": 1,
-    "name": "نسر",
+    "name": "Eagle",
     "isUsed": true
   },
   {
     "id": 176,
     "gameId": 6,
-    "name": "دووم",
+    "name": "Doom",
     "isUsed": true
   },
   {
     "id": 177,
     "gameId": 6,
-    "name": "روكيت ليغ",
+    "name": "RocketLeague",
     "isUsed": true
   },
   {
     "id": 178,
     "gameId": 6,
-    "name": "لاست اوف اس",
+    "name": "TheLastOfUs",
     "isUsed": true
   },
   {
     "id": 179,
     "gameId": 6,
-    "name": "نيد فور سبيد",
+    "name": "NeedForSpeed",
     "isUsed": true
   },
   {
     "id": 180,
     "gameId": 6,
-    "name": "ريد ديد ريديمبشن",
+    "name": "RedDeadRedemption",
     "isUsed": true
   },
   {
     "id": 181,
     "gameId": 6,
-    "name": "ماين كرافت",
+    "name": "Minecraft",
     "isUsed": true
   },
   {
     "id": 182,
     "gameId": 6,
-    "name": "فول جايز",
+    "name": "FallGuys",
     "isUsed": true
   },
   {
     "id": 183,
     "gameId": 5,
-    "name": "الهيبة",
+    "name": "AlHayba",
     "isUsed": true
   },
   {
     "id": 184,
     "gameId": 5,
-    "name": "طاش ما طاش",
+    "name": "TashMaTash",
     "isUsed": true
   },
   {
     "id": 185,
     "gameId": 4,
-    "name": "صاحبك الطبل",
+    "name": "YourDumbFriend",
     "isUsed": true
   },
   {
     "id": 186,
     "gameId": 4,
-    "name": "زيدان",
+    "name": "Zidane",
     "isUsed": true
   },
   {
     "id": 187,
     "gameId": 4,
-    "name": "بوفون",
+    "name": "Buffon",
     "isUsed": true
   },
   {
     "id": 188,
     "gameId": 4,
-    "name": "دي ماريا",
+    "name": "DiMaria",
     "isUsed": true
   },
   {
     "id": 189,
     "gameId": 4,
-    "name": "بيكهام",
+    "name": "Beckham",
     "isUsed": true
   },
   {
     "id": 190,
     "gameId": 4,
-    "name": "لايبزيج",
+    "name": "Leipzig",
     "isUsed": true
   },
   {
     "id": 191,
     "gameId": 4,
-    "name": "لازيو",
+    "name": "Lazio",
     "isUsed": true
   },
   {
     "id": 192,
     "gameId": 4,
-    "name": "بيليه",
+    "name": "Pele",
     "isUsed": true
   },
   {
     "id": 193,
     "gameId": 4,
-    "name": "مارادونا",
+    "name": "Maradona",
     "isUsed": true
   },
   {
     "id": 194,
     "gameId": 2,
-    "name": "بنطلون جينز",
+    "name": "Jeans",
     "isUsed": true
   },
   {
     "id": 195,
     "gameId": 2,
-    "name": "بجاما",
+    "name": "Pajamas",
     "isUsed": true
   },
   {
     "id": 196,
     "gameId": 2,
-    "name": "بلوزة نص كم",
+    "name": "ShortSleeveShirt",
     "isUsed": true
   },
   {
     "id": 197,
     "gameId": 2,
-    "name": "غرافة",
+    "name": "Tie",
     "isUsed": true
   },
   {
     "id": 198,
     "gameId": 2,
-    "name": "جاكيت جينز",
+    "name": "DenimJacket",
     "isUsed": true
   },
   {
     "id": 199,
     "gameId": 3,
-    "name": "فجل",
+    "name": "Radish",
     "isUsed": true
   },
   {
     "id": 201,
     "gameId": 3,
-    "name": "فاكهة التنين",
+    "name": "DragonFruit",
     "isUsed": true
   },
   {
     "id": 202,
     "gameId": 3,
-    "name": "ملوخية",
+    "name": "Molokhia",
     "isUsed": true
   },
   {
     "id": 203,
     "gameId": 3,
-    "name": "خبيزة",
+    "name": "Khubiza",
     "isUsed": true
   }
 ]

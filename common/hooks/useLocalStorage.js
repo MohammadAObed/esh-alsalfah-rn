@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useEffect, useState } from "react";
 
-function useLocalStorage(key, initialValue) {
+function useLocalStorage(key, initialValue, shouldReset = undefined) {
   const [value, setValue] = useState(initialValue);
 
   const storeData = async () => {
@@ -15,9 +15,10 @@ function useLocalStorage(key, initialValue) {
   const getValue = async () => {
     try {
       const item = await AsyncStorage.getItem(key);
-      // item = null;
       if (item !== null && item !== undefined) {
-        setValue((prev) => JSON.parse(item));
+        const data = JSON.parse(item);
+        const reset = shouldReset != undefined && shouldReset?.(data);
+        setValue((prev) => (reset ? initialValue : data));
       } else {
         setValue((prev) => initialValue);
       }

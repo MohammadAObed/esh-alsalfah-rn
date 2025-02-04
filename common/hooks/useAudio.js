@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import { Audio } from "expo-av";
+import { useEffect, useState } from "react";
 import { soundsEnum } from "../gamePlayEnums";
 
 const useAudio = (soundEnum) => {
@@ -13,15 +13,11 @@ const useAudio = (soundEnum) => {
 
   async function loadSound() {
     if (soundEnum == soundsEnum.Btn) {
-      const { sound } = await Audio.Sound.createAsync(
-        require("../../assets/audio/btn-click.wav")
-      );
+      const { sound } = await Audio.Sound.createAsync(require("../../assets/audio/btn-click.wav"));
       // console.log("EnumBtn", soundsEnum.Btn);
       setSound(sound);
     } else if (soundEnum == soundsEnum.GameOver) {
-      const { sound } = await Audio.Sound.createAsync(
-        require("../../assets/audio/game-over.wav")
-      );
+      const { sound } = await Audio.Sound.createAsync(require("../../assets/audio/game-over.wav"));
       // console.log("EnumBtn", soundsEnum.GameOver);
       setSound(sound);
       // await sound.playFromPositionAsync()

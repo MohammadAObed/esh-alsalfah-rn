@@ -1,18 +1,10 @@
-import {
-  View,
-  Text,
-  SafeAreaView,
-  ScrollView,
-  TouchableOpacity,
-} from "react-native";
 import React, { useMemo } from "react";
-import Game from "../components/GamesList_Game";
-import GamesListDetailsJSON from "../common/data/gamesListDetails.json";
-import { Translator } from "../Translation/Translator";
+import { SafeAreaView, ScrollView, Text, TouchableOpacity, View } from "react-native";
+import { ArrowLeftIcon } from "react-native-heroicons/solid";
 import { useAppContext } from "../common/AppContext";
 import { useGameContext } from "../common/GamePlayContext";
-import { ArrowDownLeftIcon, ArrowLeftIcon } from "react-native-heroicons/solid";
 import { gameStatusEnum } from "../common/gamePlayEnums";
+import { Translator } from "../Translation/Translator";
 
 const fontSizeRange = {
   min: 17,
@@ -31,13 +23,8 @@ const fontSizeRange = {
 
 const GameDetailsScreen = () => {
   const { language } = useAppContext();
-  const { currentGame, currentGameDetails, setCurrentGameDetails, setStatus } =
-    useGameContext();
-  const filteredGameDetails = useMemo(
-    () =>
-      currentGameDetails.filter((detail) => detail.gameId == currentGame.id),
-    [currentGameDetails]
-  );
+  const { currentGame, currentGameDetails, setCurrentGameDetails, setStatus } = useGameContext();
+  const filteredGameDetails = useMemo(() => currentGameDetails.filter((detail) => detail.gameId == currentGame.id), [currentGameDetails]);
   return (
     <SafeAreaView className="flex-1 bg-[#333]">
       <ScrollView className="flex-1 p-4">
@@ -53,18 +40,11 @@ const GameDetailsScreen = () => {
             <Explanation language={language} msg={"NotUsed"} color={"#999"} />
           </View>
         </View>
-        <Text className="text-white text-center text-xl">
-          {Translator[language].ClickOnAWord}:
-        </Text>
+        <Text className="text-white text-center text-xl">{Translator[language].ClickOnAWord}:</Text>
         <View className="flex-wrap flex-row p-2 justify-center mb-16">
           {filteredGameDetails.map((detail) => {
             return (
-              <GameDetail
-                key={detail.id}
-                {...detail}
-                setCurrentGameDetails={setCurrentGameDetails}
-                filteredGameDetails={filteredGameDetails}
-              />
+              <GameDetail key={detail.id} {...detail} setCurrentGameDetails={setCurrentGameDetails} filteredGameDetails={filteredGameDetails} />
             );
           })}
         </View>
@@ -73,18 +53,11 @@ const GameDetailsScreen = () => {
   );
 };
 
-const GameDetail = ({
-  id,
-  name,
-  isUsed,
-  setCurrentGameDetails,
-  filteredGameDetails,
-}) => {
+const GameDetail = ({ id, name, isUsed, setCurrentGameDetails, filteredGameDetails }) => {
+  const { language } = useAppContext();
+
   const changeWordUsage = () => {
-    if (
-      filteredGameDetails.filter((det) => det.isUsed).length <= 1 &&
-      isUsed == true
-    ) {
+    if (filteredGameDetails.filter((det) => det.isUsed).length <= 1 && isUsed == true) {
       return;
     }
     setCurrentGameDetails((prev) => {
@@ -107,7 +80,7 @@ const GameDetail = ({
           color: isUsed ? "#1c8375" : "#999",
         }}
       >
-        {name}
+        {Translator[language][name]}
       </Text>
     </TouchableOpacity>
   );
@@ -118,9 +91,7 @@ const Explanation = ({ language, msg, color }) => {
     <View className="mx-1">
       <View className="flex-row-reverse space-x-3 items-center">
         <View className="w-5 h-5" style={{ backgroundColor: color }}></View>
-        <Text className="text-white text-lg text-center mx-2">
-          {Translator[language][msg]}
-        </Text>
+        <Text className="text-white text-lg text-center mx-2">{Translator[language][msg]}</Text>
       </View>
     </View>
   );

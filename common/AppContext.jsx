@@ -1,24 +1,21 @@
-import React, {
-  createContext,
-  useMemo,
-  useCallback,
-  useContext,
-  useEffect,
-  useState,
-} from "react";
+import * as Localization from "expo-localization";
+import React, { createContext, useContext, useEffect } from "react";
 import { Translator } from "../Translation/Translator";
 import { soundsEnum } from "./gamePlayEnums";
 import useAudio from "./hooks/useAudio";
 import useLocalStorage from "./hooks/useLocalStorage";
 const AppContext = createContext();
 function AppContextProvider({ children }) {
-  const [language, setLanguage] = useLocalStorage("ESH_ALS_Language", "AR");
+  let locale = "EN";
+  try {
+    locale = Localization?.getLocales()[0]?.languageCode?.toUpperCase()?.split("-")?.[0] ?? "EN";
+  } catch (error) {}
+  if (!Object.keys(Translator).includes(locale)) {
+    locale = "EN";
+  }
+  const [language, setLanguage] = useLocalStorage("WTT_Language", locale);
   const { playSound } = useAudio(soundsEnum.Btn);
-  return (
-    <AppContext.Provider value={{ language, setLanguage, playSound }}>
-      {children}
-    </AppContext.Provider>
-  );
+  return <AppContext.Provider value={{ language, setLanguage, playSound }}>{children}</AppContext.Provider>;
 }
 
 function useAppContext() {

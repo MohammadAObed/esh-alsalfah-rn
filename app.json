@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "ايش السالفة",
-    "slug": "eshalsalfah",
-    "version": "1.0.0",
+    "name": "What's The Topic",
+    "slug": "whats-the-topic",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/bookicon.png",
     "userInterfaceStyle": "light",
@@ -11,25 +11,27 @@
       "resizeMode": "contain",
       "backgroundColor": "#333333"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "versionCode": 2,
       "adaptiveIcon": {
         "foregroundImage": "./assets/bookicon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.mohammadobed.eshalsalfah"
+      "package": "com.mohammadobed.whatsthetopic",
+      "compileSdkVersion": 34,
+      "targetSdkVersion": 34,
+      "buildToolsVersion": "34.0.0"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "4e9a7df8-2e31-40a9-bf0e-656a2078a4fe"
+        "projectId": "64aed845-d328-4d93-b6af-254d1c2ebc15"
       }
     },
     "runtimeVersion": {
@@ -38,6 +40,7 @@
     "updates": {
       "url": "https://u.expo.dev/a7e785db-32f5-4529-9ad7-f22c51c673fa"
     },
-    "owner": "mohammadobed"
+    "owner": "mohammadobed",
+    "plugins": ["expo-localization"]
   }
 }

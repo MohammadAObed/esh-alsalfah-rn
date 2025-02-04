@@ -44,9 +44,7 @@ const PlayersAdditionalQuestions = () => {
                     newQuestion(p.id);
                   }}
                 >
-                  <Text className="text-white text-2xl font-bold text-center">
-                    {p.name}
-                  </Text>
+                  <Text className="text-white text-2xl font-bold text-center">{p.name}</Text>
                 </TouchableOpacity>
               );
             })}

@@ -1,15 +1,11 @@
-import { View, Text, TouchableOpacity, ScrollView } from "react-native";
-import React, { useEffect, useState } from "react";
-import {
-  HomeIcon,
-  QuestionMarkCircleIcon,
-  GlobeAltIcon,
-} from "react-native-heroicons/solid";
-import useModal from "../common/hooks/useModal";
-import GameModal from "./GameModal";
 import { useNavigation } from "@react-navigation/native";
+import React, { useState } from "react";
+import { Text, TouchableOpacity, View } from "react-native";
+import { GlobeAltIcon, HomeIcon, QuestionMarkCircleIcon } from "react-native-heroicons/solid";
 import { Translator } from "../Translation/Translator";
 import { useAppContext } from "../common/AppContext";
+import useModal from "../common/hooks/useModal";
+import GameModal from "./GameModal";
 
 const modalContent = {
   info: 1,
@@ -73,9 +69,7 @@ const Languages = ({ hideModal, setLanguage }) => {
             setLanguage(key);
           }}
         >
-          <Text className="text-lg bg-[#aba969] text-white mt-2 py-2 px-20">
-            {key.toString()}
-          </Text>
+          <Text className="text-lg bg-[#aba969] text-white mt-2 py-2 px-20">{key.toString()}</Text>
         </TouchableOpacity>
       ))}
     </View>
@@ -85,8 +79,8 @@ const Languages = ({ hideModal, setLanguage }) => {
 const Credits = ({ Translator, language }) => {
   return (
     <View>
-      <Text className="mt-2 text-center">{Translator[language].InfoMsg}</Text>
-      <Text className="mt-10 text-sm text-center">
+      <Text className="mt-2 text-center mb-3">{Translator[language].InfoMsg}</Text>
+      {/* <Text className="mt-10 text-sm text-center">
         {Translator[language].Credits}
       </Text>
       <View>
@@ -105,8 +99,7 @@ const Credits = ({ Translator, language }) => {
             <Text className="text-center opacity-40">template.net</Text>
           </View>
         </ScrollView>
-      </View>
-
+      </View> */}
       {/* <Text className="opacity-40 mt-10 text-sm text-center">
         {Translator[language].ByMo} &#169;
       </Text> */}

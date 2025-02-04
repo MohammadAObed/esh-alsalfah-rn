@@ -1,37 +1,20 @@
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  TextInput,
-  ScrollView,
-} from "react-native";
-import React, { useEffect, useRef, useState } from "react";
-import { useGameContext } from "../common/GamePlayContext";
-import usePlayerStuff from "../common/hooks/usePlayerStuff";
-import { gameStatusEnum } from "../common/gamePlayEnums";
-import GameModal from "./GameModal";
+import React, { useState } from "react";
+import { ScrollView, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { MinusIcon, PlusIcon } from "react-native-heroicons/solid";
 import { useAppContext } from "../common/AppContext";
+import { useGameContext } from "../common/GamePlayContext";
+import { gameStatusEnum } from "../common/gamePlayEnums";
+import usePlayerStuff from "../common/hooks/usePlayerStuff";
 import { Translator } from "../Translation/Translator";
+import GameModal from "./GameModal";
 
 //!!!! Aleeeert, if textinput parameter (e) sometimes its a string, sometimes its an object and to get the string (sender.nativeEvent.text)
 
 const PlayersLobby = () => {
   const { language, playSound } = useAppContext();
   //setPlayers will invoke the useEffect with useLocalStorage
-  const {
-    players,
-    setPlayers,
-    showModal,
-    hideModal,
-    modalVisible,
-    setStatus,
-    currentGame,
-  } = useGameContext();
-  const { isPlayersEmpty, removePlayer, addPlayer } = usePlayerStuff(
-    players,
-    setPlayers
-  );
+  const { players, setPlayers, showModal, hideModal, modalVisible, setStatus, currentGame } = useGameContext();
+  const { isPlayersEmpty, removePlayer, addPlayer } = usePlayerStuff(players, setPlayers);
   const [playerInput, setPlayerInput] = useState(""); //will cause rerender to whole component, but react recommends to use controlled input so ask further
   const handleSubmit = (e) => {
     // handleButtonClick();
@@ -52,6 +35,8 @@ const PlayersLobby = () => {
     setPlayerInput(sender.nativeEvent.text);
   };
 
+  const styleByLanguage = language == "AR" ? "text-right" : " text-left";
+
   // const inputRef = useRef(null);
 
   // const handleButtonClick = () => {
@@ -59,31 +44,20 @@ const PlayersLobby = () => {
   // };
   return (
     <View className="flex-1 p-10 justify-between">
-      <Text className="text-white text-3xl">
-        {Translator[language].ChoosePlayers}
-      </Text>
+      <Text className={`${styleByLanguage} text-white text-3xl`}>{Translator[language].ChoosePlayers}</Text>
       <ScrollView className="flex-1 max-h-80">
         {isPlayersEmpty ? (
-          <Text className="text-3xl text-red-400">لا يوجد لاعبين</Text>
+          <>
+            <Text className={`${styleByLanguage} text-3xl text-red-400`}>{Translator[language].NoPlayersFound}</Text>
+            <Text className={`${styleByLanguage} text-3xl text-red-400`}>{Translator[language].Min3}</Text>
+          </>
         ) : (
           players.map((player) => {
-            return (
-              <Player
-                key={player.id}
-                {...player}
-                removePlayer={removePlayer}
-                language={language}
-                playSound={playSound}
-              ></Player>
-            );
+            return <Player key={player.id} {...player} removePlayer={removePlayer} language={language} playSound={playSound}></Player>;
           })
         )}
       </ScrollView>
-      <View
-        className={`${
-          language == "AR" ? "flex-row" : " flex-row-reverse"
-        } mb-5 justify-between items-center`}
-      >
+      <View className={`${language == "AR" ? "flex-row" : " flex-row-reverse"} mb-5 justify-between items-center`}>
         <TouchableOpacity
           className="px-4 py-4 bg-[#aba969] rounded-full"
           onPress={(e) => {
@@ -102,9 +76,7 @@ const PlayersLobby = () => {
           disabled={players.length < 3 ? true : false}
           style={{ opacity: players.length < 3 ? 0.5 : 1 }}
         >
-          <Text className="text-white text-3xl">
-            {Translator[language].Next}
-          </Text>
+          <Text className="text-white text-3xl">{Translator[language].Next}</Text>
         </TouchableOpacity>
       </View>
       <TouchableOpacity
@@ -114,9 +86,7 @@ const PlayersLobby = () => {
         }}
         className="px-10 py-2.5 bg-[#aba969] rounded-sm"
       >
-        <Text className="text-white text-3xl text-center">
-          {Translator[language].ModifyGame}
-        </Text>
+        <Text className="text-white text-3xl text-center">{Translator[language].ModifyGame}</Text>
       </TouchableOpacity>
       <AddPlayerModal
         hideModal={hideModal}
@@ -155,15 +125,7 @@ const Player = ({ name, points, id, removePlayer, language, playSound }) => {
   );
 };
 
-const AddPlayerModal = ({
-  hideModal,
-  modalVisible,
-  playSound,
-  handleSubmit,
-  handleTextChange,
-  playerInput,
-  language,
-}) => {
+const AddPlayerModal = ({ hideModal, modalVisible, playSound, handleSubmit, handleTextChange, playerInput, language }) => {
   return (
     <GameModal hideModal={hideModal} modalVisible={modalVisible}>
       <View className="flex-row mt-3">
@@ -174,9 +136,7 @@ const AddPlayerModal = ({
             handleSubmit();
           }}
         >
-          <Text className="text-white text-2xl">
-            {Translator[language].Add}
-          </Text>
+          <Text className="text-white text-2xl">{Translator[language].Add}</Text>
         </TouchableOpacity>
         <TextInput
           className="bg-[#333] text-white flex-1 px-2 py-2 text-right"

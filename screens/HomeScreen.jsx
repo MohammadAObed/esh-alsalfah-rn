@@ -1,20 +1,10 @@
-import {
-  View,
-  Text,
-  Image,
-  SafeAreaView,
-  StyleSheet,
-  TouchableOpacity,
-  Modal,
-} from "react-native";
-import React, { useEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
-import useModal from "../common/hooks/useModal";
-import { XCircleIcon } from "react-native-heroicons/solid";
-import GameModal from "../components/GameModal";
-import Navbar from "../components/Navbar";
-import { Translator } from "../Translation/Translator";
+import React from "react";
+import { Image, SafeAreaView, Text, TouchableOpacity, View } from "react-native";
 import { useAppContext } from "../common/AppContext";
+import useModal from "../common/hooks/useModal";
+import GameModal from "../components/GameModal";
+import { Translator } from "../Translation/Translator";
 const HomeScreen = () => {
   const { modalVisible, showModal, hideModal } = useModal();
   const { language, playSound } = useAppContext();
@@ -24,10 +14,10 @@ const HomeScreen = () => {
       <HomeImage />
       <Play showModal={showModal} language={language} playSound={playSound} />
       <GameModal hideModal={hideModal} modalVisible={modalVisible}>
-        <Text className="mt-4 text-center">{Translator[language].InfoMsg}</Text>
-        <Text className="opacity-40 mt-10 text-sm">
+        <Text className="mt-4 text-center mb-3">{Translator[language].InfoMsg}</Text>
+        {/* <Text className="opacity-40 mt-10 text-sm">
           {Translator[language].ByMo} &#169;
-        </Text>
+        </Text> */}
       </GameModal>
     </SafeAreaView>
   );
@@ -46,9 +36,7 @@ const Play = ({ showModal, language, playSound }) => {
           navigation.navigate("GamesListScreen");
         }}
       >
-        <Text className="text-4xl font-bold text-white">
-          {Translator[language].Play}
-        </Text>
+        <Text className="text-4xl font-bold text-white">{Translator[language].Play}</Text>
       </TouchableOpacity>
       <Text className="text-center mt-5 text-white text-lg" onPress={showModal}>
         {Translator[language].AboutGame}
@@ -60,10 +48,7 @@ const Play = ({ showModal, language, playSound }) => {
 const HomeImage = () => {
   return (
     <View className="flex-1 justify-center">
-      <Image
-        source={require("../assets/bookicon.png")}
-        className="w-52 h-52 -mt-10"
-      />
+      <Image source={require("../assets/bookicon.png")} className="w-52 h-52 -mt-10" />
     </View>
   );
 };

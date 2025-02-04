@@ -6,16 +6,9 @@ import useCurrentPlayer from "../common/hooks/useCurrentPlayer";
 import { Translator } from "../Translation/Translator";
 
 const PlayersRoles = () => {
-  const {
-    players: pp,
-    gameAnswer,
-    imposter,
-    setStatus,
-    setMakeNewGameStarters,
-  } = useGameContext();
+  const { players: pp, gameAnswer, imposter, setStatus, setMakeNewGameStarters } = useGameContext();
   const [players, setPlayers] = useState(pp);
-  const [currentPlayer, setCurrentPlayer, isRoleShown, setIsRoleShown] =
-    useCurrentPlayer(players, setPlayers, setStatus);
+  const [currentPlayer, setCurrentPlayer, isRoleShown, setIsRoleShown] = useCurrentPlayer(players, setPlayers, setStatus);
   const { language, playSound } = useAppContext();
   const updateCurrentPlayer = () => {
     const playersNotPlayed = players.map((player) => {
@@ -38,25 +31,19 @@ const PlayersRoles = () => {
   }, []);
   return (
     <View className="flex-1 p-10 items-center justify-center">
-      <Text className="text-[#aba969] text-4xl text-center -mt-20">
-        {currentPlayer.name}
-      </Text>
+      <Text className="text-[#aba969] text-4xl text-center -mt-20">{currentPlayer.name}</Text>
       <Text className="text-white text-2xl text-center mt-3">
         {Translator[language].GiveThePhoneTo}
         <Text>{currentPlayer.name}</Text>
       </Text>
       {!isRoleShown ? (
-        <Text className="text-white text-center text-lg mt-3">
-          {Translator[language].PressNextToKonwIfYou}
-        </Text>
+        <Text className="text-white text-center text-lg mt-3">{Translator[language].PressNextToKonwIfYou}</Text>
       ) : currentPlayer.id === imposter.id ? (
-        <Text className="text-white text-center text-lg mt-3">
-          {Translator[language].YouAreTheImposter}
-        </Text>
+        <Text className="text-white text-center text-lg mt-3">{Translator[language].YouAreTheImposter}</Text>
       ) : (
         <Text className="text-white text-center text-lg mt-3">
           {Translator[language].YouAreNormal}
-          <Text className="text-[#aba969] text-center"> {gameAnswer.name}</Text>
+          <Text className="text-[#aba969] text-center"> {Translator[language][gameAnswer.name]}</Text>
           {Translator[language].YourNormalGoalIs}
         </Text>
       )}
